@@ -1,0 +1,123 @@
+ .contact-us .form-main .checkbox  .form-check-input {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+ }
+
+ .contact-us #code-verify {
+    width: auto;
+ }
+
+
+section[class*=" navbar-"].navbar-area  .navbar .navbar-nav .nav-item a {
+    padding: 8px 18px;
+}
+
+section[class*=" navbar-"].navbar-area  .navbar .navbar-nav .nav-item .sub-menu li {
+    width: 100%;
+}
+
+section[class*=" navbar-"].navbar-area .navbar .navbar-nav .nav-item .sub-menu li a i {
+  padding-left: 0px;
+  margin-right: 10px;
+}
+
+.e107-page-banner {
+    padding-top: 130px;
+    padding-bottom: 80px;
+    background: var(--primary);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e107-page-banner .banner-content {
+    text-align: center;
+    color: var(--white);
+    margin: auto;
+}
+
+.e107-page-banner .banner-content h1 {
+    color: var(--white);
+    font-size: 38px;
+    font-weight: 600;
+    max-width: 600px;
+    margin: auto;
+}
+
+.e107-page-banner .banner-content a {
+    color: var(--white); 
+}
+
+.e107-page-banner .breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    color: var(--white);
+}
+ 
+.e107-page-banner .breadcrumb  {
+    justify-content: center;
+}
+
+
+/* e107 menus */
+
+.sidebar {
+    margin-top: 50px;
+}
+
+.sidebar .widgets {
+    background-color: var(--white);
+    padding: 5px;
+}
+
+.sidebar .widget {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  /*  background-color: var(--info-light); */
+    padding: 5px;
+}
+
+.sidebar .widget .widget-title::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--primary);
+    content: '';
+}
+
+.sidebar .widget .widget-title {
+    font-size: 17px;
+    margin-bottom: 40px;
+    line-height: 1;
+    position: relative;
+    padding-left: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.sidebar .widget .list-group-item {
+    border: none;
+}
+
+.sidebar .widget ul li a {
+    padding: 14px 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    color: #081828;
+    font-weight: 500;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    position: relative;
+    padding-right: 40px;
+}
+
+.sidebar .widget ul li a:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: var(--primary);
+}

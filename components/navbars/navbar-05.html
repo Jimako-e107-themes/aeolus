@@ -1,0 +1,47 @@
+<!--====== NAVBAR FIVE PART START ======-->
+
+<section class="navbar-area navbar-five">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar justify-content-between navbar-expand-lg">
+                    <a class="navbar-brand" href="{SITEURL}">
+                        {SITELOGO: h=80}
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFive"
+                        aria-controls="navbarFive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbarFive">
+                        <ul class="navbar-nav ms-auto">
+                            {NAVIGATION=main}
+                        </ul>
+                        <ul class="navbar-nav navbar-right signin">
+                            {SIGNIN}
+                        </ul>
+                    </div>
+                   
+                     
+                </nav>
+                <!-- navbar -->
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</section>
+<script>
+    if (true) {
+    //===== close navbar-collapse when a  clicked
+    const navbarTogglerFive = document.querySelector(
+        ".navbar-five .navbar-toggler"
+    );
+    navbarTogglerFive.addEventListener("click", function () {
+        navbarTogglerFive.classList.toggle("active");
+    });
+    }
+</script>
+ 
