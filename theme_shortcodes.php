@@ -14,18 +14,29 @@ class theme_shortcodes extends e_shortcode
 	{
 		$pref = e107::pref('theme', 'navbar');
 
-		$header_file = varset($pref, 'navbar-01.html');
+		$key = 	varset($pref, 'navbar-01');
 
-		$headerpath = e_THEME . e107::getPref('sitetheme') . '/components/navbars/' . $header_file;
+		$themepath = e_THEME . e107::getPref('sitetheme');
 
-		if (file_exists($headerpath))
+		$path_html = "{$themepath}/components/navbars/{$key}.html";
+
+		$path_css =  "components/navbars/{$key}.css";
+
+		if (file_exists($path_html))
 		{
-			$text = file_get_contents($headerpath);
+			$text = file_get_contents($path_html);
 			$text = e107::getParser()->parseTemplate($text);
 		}
 		else
 		{
 			$text = '';
+		}
+
+		$path_css =  "components/navbars/{$key}.css";
+
+		if (file_exists($themepath . "/" . $path_css))
+		{
+			e107::css("theme", $path_css);
 		}
 
 		return $text;
@@ -38,20 +49,67 @@ class theme_shortcodes extends e_shortcode
 	 */
 	function sc_footer()
 	{
-		$pref = e107::pref('theme', 'footer');
 
-		$footer_file = varset($pref, 'footer-01');
+		$theme_name = e107::getPref('sitetheme');
+ 
+		$pref = e107::getThemeConfig($theme_name)->getPref();
 
-		$footerpath = e_THEME . e107::getPref('sitetheme') . '/components/footers/' . $footer_file;
+		$key = 	varset($pref['footer'], 'footer-01');
 
-		if (file_exists($footerpath))
+		$themepath = e_THEME . e107::getPref('sitetheme');
+
+		$path_html = "{$themepath}/components/footers/{$key}.html";
+
+		if (e_PAGE == "menus.php")
 		{
-			$text = file_get_contents($footerpath);
-			// $text = e107::getParser()->parseTemplate($text);
+
+			if (defined("e_MENUMANAGER_ACTIVE") and e_MENUMANAGER_ACTIVE)
+			{
+				//standard way
+				if (file_exists($path_html))
+				{
+					$text = file_get_contents($path_html);
+					// $text = e107::getParser()->parseTemplate($text);
+				}
+				else
+				{
+					$text = '';
+				}
+
+				$path_css =  "components/footers/{$key}.css";
+
+				if (file_exists($themepath . "/" . $path_css))
+				{
+					e107::css("theme", $path_css);
+				}
+			}
+			else  //menu selection
+			{
+				 
+				$text = " {MENUAREA=41}{MENUAREA=42}{MENUAREA=43}{MENUAREA=44}{MENUAREA=45}{MENUAREA=46} ";
+			}
 		}
 		else
 		{
-			$text = '';
+
+			$path_html = "{$themepath}/components/footers/{$key}.html";
+
+			if (file_exists($path_html))
+			{
+				$text = file_get_contents($path_html);
+				// $text = e107::getParser()->parseTemplate($text);
+			}
+			else
+			{
+				$text = '';
+			}
+
+			$path_css =  "components/footers/{$key}.css";
+
+			if (file_exists($themepath . "/" . $path_css))
+			{
+				e107::css("theme", $path_css);
+			}
 		}
 
 		return $text;
@@ -67,19 +125,25 @@ class theme_shortcodes extends e_shortcode
 			return '';
 		}
 		$type = $parm['type'];
+
 		$key = varset($parm['key'], 'default');
 
 		$themepath = e_THEME . e107::getPref('sitetheme');
 
-		$path = "{$themepath}/components/{$type}/{$key}.html";
+		$path_html = "{$themepath}/components/{$type}/{$key}.html";
+		$path_css =  "components/{$type}/{$key}.css";
 
-		if (file_exists($path))
+		if (file_exists($path_html))
 		{
-			$text = file_get_contents($path);
+			$text = file_get_contents($path_html);
 		}
 		else
 		{
-			return '';
+			$text = '';
+		}
+		if (file_exists($themepath . "/" . $path_css))
+		{
+			e107::css("theme", $path_css);
 		}
 
 		$text = e107::getParser()->parseTemplate($text);

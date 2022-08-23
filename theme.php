@@ -8,10 +8,9 @@ if (!defined('e107_INIT'))
 $sitetheme = e107::getPref('sitetheme');
 $value = e107::getThemeConfig($sitetheme)->getPref();
 
-//with footer in separate file Menu manager is not working, replace it manually in theme.html
 $pArray = array(
-	'navbar' => 'navbar-05.html',
-	'footer' => 'footer-06.html'
+	'navbar' => 'navbar-05',
+	'footer' => 'footer-06'
 );
 
 e107::getThemeConfig($sitetheme)->setPref($pArray);
@@ -75,15 +74,15 @@ class theme implements e_theme_render
 		//e107::css('theme', 'assets/css/loading-bar.min.css');
 		e107::css('theme', 'assets/css/tiny-slider.css');
 
-		//original css    e107::css('theme', 'css/theme.css');
+		//original css    e107::css('theme', 'theme.css');
 		e107::css('theme', 'css/starter.css');   //core
 		e107::css('theme', 'css/form-elements.css');   //core
 		e107::css('theme', 'css/button-page.css');   //core
-		e107::css('theme', 'css/scroll-top.css');    
+		e107::css('theme', 'css/scroll-top.css');
 		e107::css('theme', 'css/list-style/list-style.css');   //core
 		e107::css('theme', 'css/section-title/section-title-02.css');   //app template
-		e107::css('theme', 'css/navbars/navbar-05.css');   //core
-		e107::css('theme', 'css/headers/header-11.css');   //app template
+		//e107::css('theme', 'css/navbars/navbar-01.css');   //core
+		//e107::css('theme', 'css/headers/header-10.css');   //app template
 		e107::css('theme', 'css/clients/clients-03.css');   //app template
 		e107::css('theme', 'css/features/feature-12.css');   //app template
 		e107::css('theme', 'css/about/about-08.css');   //app template		
@@ -93,7 +92,7 @@ class theme implements e_theme_render
 		e107::css('theme', 'css/call-to-action/call-to-action-03.css');   //app template
 		e107::css('theme', 'css/teams/team-07.css');   //app template
 		e107::css('theme', 'css/contact/contact-06.css');	//app template
-		e107::css('theme', 'css/footers/footer-06.css');	//app template
+		// e107::css('theme', 'css/footers/footer-05.css');	//app template
 
 		//new e107 stuff - featurebox
 		e107::css('theme', 'css/sliders/slider-01.css');  //core
@@ -235,11 +234,10 @@ class theme implements e_theme_render
 				echo $text;
 				break;
 
-
-			case "header-06":
+			case "heading-6":
 				if (!empty($caption))
 				{
-					echo '<h1 class="header-title">' . $caption . '</h1>';
+					echo '<h6 class="header-title text-uppercase">' . $caption . '</h6>';
 				}
 				echo $text;
 				break;

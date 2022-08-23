@@ -796,12 +796,12 @@ Morbi porta leo iaculis, hendrerit lorem interdum, porta dui. Integer tempor con
 			<field name="page_template">default</field>
 			<field name="page_order">10004</field>
 			<field name="page_fields">{
-    "client-01": "{e_THEME}aeolus\/assets\/images\/client-logo\/ayroui.svg",
-    "client-02": "{e_THEME}aeolus\/assets\/images\/client-logo\/graygrids.svg",
-    "client-03": "{e_THEME}aeolus\/assets\/images\/client-logo\/ayroui.svg",
-    "client-04": "{e_THEME}aeolus\/assets\/images\/client-logo\/lineicons.svg",
-    "client-05": "{e_THEME}aeolus\/assets\/images\/client-logo\/graygrids.svg",
-    "client-06": "{e_THEME}aeolus\/assets\/images\/client-logo\/ayroui.svg"
+    "client-01": "{e_THEME}aeolus\/images\/client-logo\/ayroui.svg",
+    "client-02": "{e_THEME}aeolus\/images\/client-logo\/graygrids.svg",
+    "client-03": "{e_THEME}aeolus\/images\/client-logo\/ayroui.svg",
+    "client-04": "{e_THEME}aeolus\/images\/client-logo\/lineicons.svg",
+    "client-05": "{e_THEME}aeolus\/images\/client-logo\/graygrids.svg",
+    "client-06": "{e_THEME}aeolus\/images\/client-logo\/ayroui.svg"
 }</field>
 			<field name="menu_name">client-logo</field>
 			<field name="menu_title">Client Logos</field>
@@ -835,12 +835,12 @@ Morbi porta leo iaculis, hendrerit lorem interdum, porta dui. Integer tempor con
 			<field name="page_template">default</field>
 			<field name="page_order">10004</field>
 			<field name="page_fields">{
-    "client-01": "{e_THEME}aeolus\/assets\/images\/client-logo\/ayroui.svg",
-    "client-02": "{e_THEME}aeolus\/assets\/images\/client-logo\/graygrids.svg",
-    "client-03": "{e_THEME}aeolus\/assets\/images\/client-logo\/ayroui.svg",
-    "client-04": "{e_THEME}aeolus\/assets\/images\/client-logo\/lineicons.svg",
-    "client-05": "{e_THEME}aeolus\/assets\/images\/client-logo\/graygrids.svg",
-    "client-06": "{e_THEME}aeolus\/assets\/images\/client-logo\/ayroui.svg"
+    "client-01": "{e_THEME}aeolus\/images\/client-logo\/ayroui.svg",
+    "client-02": "{e_THEME}aeolus\/images\/client-logo\/graygrids.svg",
+    "client-03": "{e_THEME}aeolus\/images\/client-logo\/ayroui.svg",
+    "client-04": "{e_THEME}aeolus\/images\/client-logo\/lineicons.svg",
+    "client-05": "{e_THEME}aeolus\/images\/client-logo\/graygrids.svg",
+    "client-06": "{e_THEME}aeolus\/images\/client-logo\/ayroui.svg"
 }</field>
 			<field name="menu_name">client-logo-two</field>
 			<field name="menu_title">Client Logos Two</field>
@@ -923,7 +923,7 @@ Morbi porta leo iaculis, hendrerit lorem interdum, porta dui. Integer tempor con
 			<field name="menu_title"><![CDATA[We have powerfull dashbord<br>  that help check your daily status]]></field>
 			<field name="menu_text"><![CDATA[[html]<p>This content is fully managed by e107 custom menu. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#039;t look even slightly believable.</p>[/html]]]></field>
-			<field name="menu_image">{e_THEME}aeolus/assets/images/about/app-image.jpg</field>
+			<field name="menu_image">{e_THEME}aeolus/images/about/app-image.jpg</field>
 			<field name="menu_icon">lni-grid-alt.glyph</field>
 			<field name="menu_template">about-eight</field>
 			<field name="menu_class">0</field>
@@ -987,7 +987,7 @@ Morbi porta leo iaculis, hendrerit lorem interdum, porta dui. Integer tempor con
 			<field name="menu_name">call-action-three</field>
 			<field name="menu_title">Download now and start your using our app.</field>
 			<field name="menu_text"><![CDATA[[html]<p>This is normal text</p>[/html]]]></field>
-			<field name="menu_image">{e_THEME}aeolus/assets/images/call-action/cta-03.svg</field>
+			<field name="menu_image">{e_THEME}aeolus/images/call-action/cta-03.svg</field>
 			<field name="menu_icon"></field>
 			<field name="menu_template">call-action-three</field>
 			<field name="menu_class">0</field>

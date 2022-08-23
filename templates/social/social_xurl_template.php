@@ -29,9 +29,18 @@ $SOCIAL_XURL_TEMPLATE['footer-01']['item'] = '<li><a target="_blank" rel="noopen
 	 aria-label="{XURL_ICONS_TITLE}"><span class="e-social-{XURL_ICONS_ID} {XURL_ICONS_CLASS}"></span></a></li>';
 $SOCIAL_XURL_TEMPLATE['footer-01']['end'] = '</ul> ';
 
+
+$SOCIAL_XURL_TEMPLATE['footer-05']['start'] = '<h5 class="text-center social-title">Follow Us On</h5><ul class="social text-center mt-60">';
+$SOCIAL_XURL_TEMPLATE['footer-05']['item'] = '<li><a target="_blank" rel="noopener noreferrer" href="{XURL_ICONS_HREF}" 
+	 data-tooltip-position="top" class="e-tip social-icon social-{XURL_ICONS_ID}" title="{XURL_ICONS_TITLE}" 
+	 aria-label="{XURL_ICONS_TITLE}"><span class="e-social-{XURL_ICONS_ID} {XURL_ICONS_CLASS}"></span></a></li>';
+$SOCIAL_XURL_TEMPLATE['footer-05']['end'] = '</ul> ';
+
 /* just to know that this was covered, footer-01 can be used directly */
 $SOCIAL_XURL_TEMPLATE['footer-02'] = $SOCIAL_XURL_TEMPLATE['footer-01'];
 $SOCIAL_XURL_TEMPLATE['footer-06'] = $SOCIAL_XURL_TEMPLATE['footer-01'];
+
+
 
 $SOCIAL_XURL_TEMPLATE['navbar-03']['start'] = '<ul>';
 $SOCIAL_XURL_TEMPLATE['navbar-03']['item'] = '<li><a target="_blank" rel="noopener noreferrer" href="{XURL_ICONS_HREF}" 
