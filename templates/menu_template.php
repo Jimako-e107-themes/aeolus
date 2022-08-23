@@ -350,6 +350,75 @@ $MENU_TEMPLATE['features-twelve']['end'] 			= '
 
 
 
+$MENU_TEMPLATE['services-seven']['start'] 		= '
+  <!-- Start Services Area -->
+  <section id="services" class="services-area services-seven">
+    <!--======  Start Section Title Three ======-->
+    <div class="section-title-three">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h5>{CHAPTER_NAME}</h5>
+              <h2 class="fw-bold">{CMENUTITLE}</h2>
+              <p>{CMENUBODY}
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!--====== End Section Title Three ======-->
+    <div class="container">
+      <div class="single-head">
+        <div class="row">
+   ';
+$MENU_TEMPLATE['services-seven']['body'] =
+'
+<div class="col-lg-4 col-md-6 col-12">
+	<div class="single-service">
+		<span class="serial">01</span>
+		<h4>{CPAGEFIELD: name=service-01-title}</h4>
+		<p>{CPAGEFIELD: name=service-01-text}</p>
+		<div class="light-rounded-buttons">
+		<a href="{CPAGEFIELD: name=service-01-url}" class="btn primary-btn"> Read More </a>
+		</div>
+	</div>
+</div>
+<div class="col-lg-4 col-md-6 col-12">
+	<div class="single-service">
+		<span class="serial">02</span>
+		<h4>{CPAGEFIELD: name=service-02-title}</h4>
+		<p>{CPAGEFIELD: name=service-02-text}</p>
+		<div class="light-rounded-buttons">
+		<a href="{CPAGEFIELD: name=service-02-url}" class="btn primary-btn"> Read More </a>
+		</div>
+	</div>
+</div>
+<div class="col-lg-4 col-md-6 col-12">
+	<div class="single-service">
+		<span class="serial">03</span>
+		<h4>{CPAGEFIELD: name=service-03-title}</h4>
+		<p>{CPAGEFIELD: name=service-03-text}</p>
+		<div class="light-rounded-buttons">
+		<a href="{CPAGEFIELD: name=service-03-url}" class="btn primary-btn"> Read More </a>
+		</div>
+	</div>
+</div>		  
+	 
+  ';
+$MENU_TEMPLATE['services-seven']['end'] 			= '
+</div>
+      </div>
+      <!-- row -->  
+    </div>
+    <!-- container -->
+</section>
+ <!-- /End Features Area -->';
+
 
 $MENU_TEMPLATE['video-one']['start'] 		= '<!--====== VIDEO ONE PART START ======--><section class="video-area video-one">';
 $MENU_TEMPLATE['video-one']['body'] 		= '

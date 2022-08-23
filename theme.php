@@ -74,13 +74,14 @@ class theme implements e_theme_render
 		//e107::css('theme', 'assets/css/loading-bar.min.css');
 		e107::css('theme', 'assets/css/tiny-slider.css');
 
-		//original css    e107::css('theme', 'theme.css');
+        //original css    e107::css('theme', 'theme.css');
 		e107::css('theme', 'css/starter.css');   //core
 		e107::css('theme', 'css/form-elements.css');   //core
 		e107::css('theme', 'css/button-page.css');   //core
 		e107::css('theme', 'css/scroll-top.css');
 		e107::css('theme', 'css/list-style/list-style.css');   //core
 		e107::css('theme', 'css/section-title/section-title-02.css');   //app template
+		e107::css('theme', 'css/section-title/section-title-03.css');   //startup template
 		//e107::css('theme', 'css/navbars/navbar-01.css');   //core
 		//e107::css('theme', 'css/headers/header-10.css');   //app template
 		e107::css('theme', 'css/clients/clients-03.css');   //app template
@@ -93,6 +94,7 @@ class theme implements e_theme_render
 		e107::css('theme', 'css/teams/team-07.css');   //app template
 		e107::css('theme', 'css/contact/contact-06.css');	//app template
 		// e107::css('theme', 'css/footers/footer-05.css');	//app template
+		e107::css('theme', 'css/services/service-07.css');	//startup template
 
 		//new e107 stuff - featurebox
 		e107::css('theme', 'css/sliders/slider-01.css');  //core
