@@ -1,0 +1,47 @@
+<!--====== NAVBAR FOUR PART START ======-->
+
+<section class="navbar-area navbar-four">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar justify-content-between navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFour"
+                        aria-controls="navbarFour" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbarFour">
+                        <ul class="navbar-nav">
+                            {NAVIGATION=main}
+                        </ul>
+                    </div>
+                    <a class="navbar-brand m-auto" href="{SITEURL}">
+                        {SITELOGO: h=80}
+                    </a>
+                    <div class="navbar-social d-none d-sm-flex align-items-center">
+                        {XURL_ICONS: template=navbar-04}
+                    </div>
+                </nav>
+                <!-- navbar -->
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</section>
+
+<!--====== NAVBAR FOUR PART ENDS ======-->
+
+<script>
+    if (true) {
+        //===== close navbar-collapse when a  clicked
+        let navbarTogglerFour = document.querySelector(
+            ".navbar-four .navbar-toggler"
+        );
+        navbarTogglerFour.addEventListener("click", function () {
+            navbarTogglerFour.classList.toggle("active");
+        });
+    }
+</script>

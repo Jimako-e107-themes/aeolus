@@ -20,19 +20,19 @@ class theme_config implements e_theme_config
 	function config()
 	{
 		$navbars = array(
-			'navbar-01.html' => 'Navbar 01',
-			'navbar-02.html' => 'Navbar 02',
-			'navbar-03.html' => 'Navbar 03',
-			'navbar-04.html' => 'Navbar 04',
-			'navbar-05.html' => 'Navbar 05',
-			'navbar-06.html' => 'Navbar 06',
-			'navbar-07.html' => 'Navbar 07',
-			'navbar-08.html' => 'Navbar 08',
-			'navbar-09.html' => 'Navbar 09',
-			'navbar-10.html' => 'Navbar 10'
+			'navbar-01' => 'Navbar 01',
+			'navbar-02' => 'Navbar 02',
+			'navbar-03' => 'Navbar 03',
+			'navbar-04' => 'Navbar 04',
+			'navbar-05' => 'Navbar 05',
+			'navbar-06' => 'Navbar 06',
+			//'navbar-07' => 'Navbar 07',
+			'navbar-08' => 'Navbar 08',
+			'navbar-09' => 'Navbar 09',
+			'navbar-10' => 'Navbar 10'
 		);
 
-		$footers = array('footer-01.html' => 'Footer 01', 'footer-02.html' => 'Footer 02', 'footer-06.html' => 'Footer 06', 'footer-13.html' => 'Footer 13');
+		$footers = array('footer-01' => 'Footer 01', 'footer-02' => 'Footer 02', 'footer-06' => 'Footer 06', 'footer-13' => 'Footer 13');
 
 		return array(
 			'preloader' => array('title' => 'Display preloader', 'type' => 'boolean',  'writeParms' => array(), 'help' => ''),

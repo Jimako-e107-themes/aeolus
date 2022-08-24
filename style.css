@@ -10,19 +10,34 @@
     width: auto;
  }
 
+section[class*=" navbar-"].navbar-area  .navbar .collapse.show .nav-item {
+    margin-right: 0;
+}
 
 section[class*=" navbar-"].navbar-area  .navbar .navbar-nav .nav-item a {
     padding: 8px 18px;
 }
 
+section[class*=" navbar-"].navbar-area .navbar .navbar-nav  .nav-item.signin a {
+    white-space: nowrap;
+}
+
+
 section[class*=" navbar-"].navbar-area  .navbar .navbar-nav .nav-item .sub-menu li {
     width: 100%;
+    margin: 0;
 }
 
 section[class*=" navbar-"].navbar-area .navbar .navbar-nav .nav-item .sub-menu li a i {
   padding-left: 0px;
   margin-right: 10px;
 }
+
+.navbar-area.navbar-four .navbar .navbar-social span.xurl {
+    color: var(--white);
+    margin-right: 0;
+}
+ 
 
 .e107-page-banner {
     padding-top: 130px;

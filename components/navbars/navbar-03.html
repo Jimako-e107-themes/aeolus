@@ -1,0 +1,60 @@
+    <!--====== NAVBAR THREE PART START ======-->
+
+    <section class="navbar-area navbar-three">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="{SITEURL}">
+                    {SITELOGO: h=80}
+                </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarThree"
+                aria-controls="navbarThree"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse sub-menu-bar"
+                id="navbarThree"
+              >
+                <ul class="navbar-nav ms-auto">
+                {NAVIGATION=main}
+                    
+                  </li>
+                </ul>
+              </div>
+
+              <div class="navbar-social d-none d-sm-inline-block">
+                {XURL_ICONS: template=navbar-03}
+              </div>
+            </nav>
+            <!-- navbar -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== NAVBAR THREE PART ENDS X ======-->
+ 
+    <script>
+        if (true) {
+            //===== close navbar-collapse when a  clicked
+            let navbarTogglerThree = document.querySelector(
+                ".navbar-three .navbar-toggler"
+            );
+            navbarTogglerThree.addEventListener("click", function () {
+                navbarTogglerThree.classList.toggle("active");
+            });
+        }
+    </script>

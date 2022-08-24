@@ -7,12 +7,12 @@ if (!defined('e107_INIT'))
 
 $sitetheme = e107::getPref('sitetheme');
 $value = e107::getThemeConfig($sitetheme)->getPref();
-
+/*
 $pArray = array(
 	'navbar' => 'navbar-05',
 	'footer' => 'footer-06'
 );
-
+*/
 e107::getThemeConfig($sitetheme)->setPref($pArray);
 
 class theme implements e_theme_render
@@ -95,6 +95,7 @@ class theme implements e_theme_render
 		e107::css('theme', 'css/contact/contact-06.css');	//app template
 		// e107::css('theme', 'css/footers/footer-05.css');	//app template
 		e107::css('theme', 'css/services/service-07.css');	//startup template
+        e107::css('theme', 'css/videos/video-02.css');   //startup template        
 
 		//new e107 stuff - featurebox
 		e107::css('theme', 'css/sliders/slider-01.css');  //core

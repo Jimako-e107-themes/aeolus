@@ -52,7 +52,7 @@ $SOCIAL_XURL_TEMPLATE['navbar-03']['end'] = '</ul> ';
 $SOCIAL_XURL_TEMPLATE['navbar-04']['start'] = '<span class="xurl-title">Follow Us</span><ul>';
 $SOCIAL_XURL_TEMPLATE['navbar-04']['item'] = '<li><a target="_blank" rel="noopener noreferrer" href="{XURL_ICONS_HREF}" 
 	 data-tooltip-position="top" class="e-tip social-icon social-{XURL_ICONS_ID}" title="{XURL_ICONS_TITLE}" 
-	 aria-label="{XURL_ICONS_TITLE}"><span class="e-social-{XURL_ICONS_ID} {XURL_ICONS_CLASS}"></span></a></li>';
+	 aria-label="{XURL_ICONS_TITLE}"><span class="xurl e-social-{XURL_ICONS_ID} {XURL_ICONS_CLASS}"></span></a></li>';
 $SOCIAL_XURL_TEMPLATE['navbar-04']['end'] = '</ul> ';
 
 $SOCIAL_XURL_TEMPLATE['navbar-09']['start'] = '<h5 class="social-title">Follow Us On</h5><ul>';

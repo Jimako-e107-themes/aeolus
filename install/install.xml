@@ -223,8 +223,8 @@ Info: Title, rounded buttons, primary button
 		<item>
 			<field name="chapter_id">8</field>
 			<field name="chapter_parent">4</field>
-			<field name="chapter_name">Video One</field>
-			<field name="chapter_sef">video-one</field>
+			<field name="chapter_name">Bootstrap Videos</field>
+			<field name="chapter_sef">bootstrap-videos</field>
 			<field name="chapter_meta_description"></field>
 			<field name="chapter_meta_keywords"></field>
 			<field name="chapter_manager">0</field>
@@ -932,7 +932,7 @@ Morbi porta leo iaculis, hendrerit lorem interdum, porta dui. Integer tempor con
 		</item>
 		<item>
 			<field name="page_id">16</field>
-			<field name="page_title"></field>
+			<field name="page_title">Learn & Share</field>
 			<field name="page_subtitle"></field>
 			<field name="page_sef">video-one</field>
 			<field name="page_chapter">8</field>
@@ -953,13 +953,13 @@ Morbi porta leo iaculis, hendrerit lorem interdum, porta dui. Integer tempor con
 			<field name="page_order">10007</field>
 			<field name="page_fields"></field>
 			<field name="menu_name">video-one</field>
-			<field name="menu_title">Watch Our App Features</field>
+			<field name="menu_title">Do good work and share</field>
 			<field name="menu_text"><![CDATA[[html]<p>This content is fully managed by e107 custom menu. Firsthand accounts from leaders who have changed the world we live in and the entrepreneurs shaping tomorrow’s world.</p>[/html]]]></field>
-			<field name="menu_image">{e_THEME}aeolus/assets/images/video/video-bg.jpg</field>
+			<field name="menu_image">{e_THEME}aeolus/images/video/video-bg.jpg</field>
 			<field name="menu_icon">lni-play.glyph</field>
 			<field name="menu_template">video-one</field>
 			<field name="menu_class">0</field>
-			<field name="menu_button_url"></field>
+			<field name="menu_button_url">https://www.youtube.com/watch?v=NJbXptdalP0</field>
 			<field name="menu_button_text"></field>
 		</item>
 		<item>

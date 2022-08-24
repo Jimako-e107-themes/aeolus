@@ -143,13 +143,12 @@ $NAVIGATION_TEMPLATE['footer']['submenu_loweritem'] = '';
 $NAVIGATION_TEMPLATE['footer']['submenu_item_active'] = '';
 $NAVIGATION_TEMPLATE['footer']['submenu_end'] = '';
 
-$NAVIGATION_TEMPLATE['alt']['start'] = '<ul class="nav nav-list">
-														';
+$NAVIGATION_TEMPLATE['alt']['start'] = '<ul>';
 
 $NAVIGATION_TEMPLATE['alt']['item'] = '<li><a href="{NAV_LINK_URL}"{NAV_LINK_OPEN} title="{NAV_LINK_DESCRIPTION}">{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>
 														';
 
-$NAVIGATION_TEMPLATE['alt']['item_submenu'] = '<li class="nav-header">{NAV_LINK_ICON}{NAV_LINK_NAME}{NAV_LINK_SUB}</li>
+$NAVIGATION_TEMPLATE['alt']['item_submenu'] = '<li>{NAV_LINK_ICON}{NAV_LINK_NAME}{NAV_LINK_SUB}</li>
 														';
 
 $NAVIGATION_TEMPLATE['alt']['item_active'] = '<li class="active"{NAV_LINK_OPEN}><a href="{NAV_LINK_URL}" title="{NAV_LINK_DESCRIPTION}">{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>
