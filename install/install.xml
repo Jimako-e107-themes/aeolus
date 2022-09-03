@@ -932,7 +932,7 @@ Morbi porta leo iaculis, hendrerit lorem interdum, porta dui. Integer tempor con
 		</item>
 		<item>
 			<field name="page_id">16</field>
-			<field name="page_title">Learn & Share</field>
+			<field name="page_title">Learn and Share</field>
 			<field name="page_subtitle"></field>
 			<field name="page_sef">video-one</field>
 			<field name="page_chapter">8</field>
