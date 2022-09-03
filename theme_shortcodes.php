@@ -12,16 +12,18 @@ class theme_shortcodes extends e_shortcode
 	 */
 	function sc_header()
 	{
-		$pref = e107::pref('theme', 'navbar');
+		$theme_name = e107::getPref('sitetheme');
+ 
+		$pref = e107::getThemeConfig($theme_name)->getPref();
+ 
+		$key = 	varset($pref['navbar'], 'navbar-01');
 
-		$key = 	varset($pref, 'navbar-01');
-
-		$themepath = e_THEME . e107::getPref('sitetheme');
+		$themepath = e_THEME . $theme_name;
 
 		$path_html = "{$themepath}/components/navbars/{$key}.html";
 
 		$path_css =  "components/navbars/{$key}.css";
-
+	 
 		if (file_exists($path_html))
 		{
 			$text = file_get_contents($path_html);
@@ -36,7 +38,7 @@ class theme_shortcodes extends e_shortcode
 
 		if (file_exists($themepath . "/" . $path_css))
 		{
-			e107::css("theme", $path_css);
+			e107::css("url", $themepath . "/" . $path_css);
 		}
 
 		return $text;
@@ -53,10 +55,10 @@ class theme_shortcodes extends e_shortcode
 		$theme_name = e107::getPref('sitetheme');
  
 		$pref = e107::getThemeConfig($theme_name)->getPref();
-
+		
 		$key = 	varset($pref['footer'], 'footer-01');
 
-		$themepath = e_THEME . e107::getPref('sitetheme');
+		$themepath = e_THEME . $theme_name;
 
 		$path_html = "{$themepath}/components/footers/{$key}.html";
 
@@ -80,8 +82,9 @@ class theme_shortcodes extends e_shortcode
 
 				if (file_exists($themepath . "/" . $path_css))
 				{
-					e107::css("theme", $path_css);
+					e107::css("url", $themepath . "/" . $path_css);
 				}
+
 			}
 			else  //menu selection
 			{
