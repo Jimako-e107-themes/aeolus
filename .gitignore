@@ -350,3 +350,4 @@ MigrationBackup/
 .ionide/
 components/footers/footer-01.html
 templates/cookbook/*
+templates/news/news_blogs_template.php
