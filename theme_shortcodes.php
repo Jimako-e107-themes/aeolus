@@ -13,7 +13,7 @@ class theme_shortcodes extends e_shortcode
 	function sc_footer()
 	{
 
-		$theme_name = e107::getPref('sitetheme');
+		$theme_name = deftrue('USERTHEME', e107::pref('core', 'sitetheme'));
  
 		$pref = e107::getThemeConfig($theme_name)->getPref();
 		
@@ -92,7 +92,9 @@ class theme_shortcodes extends e_shortcode
 
 		$key = varset($parm['key'], 'default');
 
-		$themepath = e_THEME . e107::getPref('sitetheme');
+		$theme_name = deftrue('USERTHEME', e107::pref('core', 'sitetheme'));
+
+		$themepath = e_THEME . $theme_name;
  
 		$path_html = "{$themepath}/components/{$type}/{$key}.html";
 		$path_css =  "components/{$type}/{$key}.css";
