@@ -1,0 +1,26 @@
+/* CSS Document */
+
+/*===========================
+  e107 NAVBAR css 
+===========================*/
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-area {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar-area.sticky {
+  position: fixed !important;
+  z-index:99 !important;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  top: 0;
+  width: 100%;
+}
+
+ 
+

@@ -108,7 +108,8 @@ class theme implements e_theme_render
 		e107::css('theme', 'css/blogs/blog-05.css');
 		e107::css('theme', 'css/blogs/blog-08.css');
 		e107::css('theme', 'css/blogs/blog-10.css');  //menus in sidebar
-
+		e107::css('theme', 'css/blogs/blog-14.css');
+		
 		//new e107 stuff - contact page
 		e107::css('theme', 'css/contact/contact-04.css');
 
@@ -125,15 +126,21 @@ class theme implements e_theme_render
 		//e107::js('theme', 'assets/js/loading-bar.min.js', 'jquery');
 		e107::js('theme', 'assets/js/tiny-slider.js', 'jquery');
 
-		e107::js('theme', 'js/navbar.js', 'jquery');
+		e107::js('theme', 'js/navbar.js', 'jquery');	
 
-		$stickynavbar = e107::pref('theme', 'stickynavbar');
+		$theme_prefs = e107::pref('theme');
 	 
-		$stickynavbar = varset($stickynavbar, true);
+		$stickynavbar = varset($theme_prefs['stickynavbar'], true);
 		if ($stickynavbar)
 		{
 			e107::js('theme', 'js/stickynavbar.js', 'jquery');
 		}
+
+		$backtotop = varset($theme_prefs['backtotop'], true);
+		if ($backtotop)
+		{
+			e107::js('theme', 'js/backtotop.js', 'jquery');
+		}		
  
 		e107::js('theme', 'js/fix.js', 'jquery');
 	}
