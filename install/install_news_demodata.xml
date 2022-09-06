@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<e107Export version="2.3.3 (git)" timestamp="1662467507" >
+	<database>
+	<dbTable name="news">
+		<item>
+			<field name="news_id">1</field>
+			<field name="news_title">News Item 1</field>
+			<field name="news_sef">news-item-1</field>
+			<field name="news_body"><![CDATA[[html]<p>Lorem ipsum dolor sit amet, no meis semper dicunt est, petentium eloquentiam quo ne. At vero facer eam. Ex nam altera oportere, nisl natum prima id pro. Rebum augue dissentiet eum te, vel veniam eirmod option ea, at eos velit repudiare. Ius sumo dicit adolescens id, an cum efficiantur concludaturque.<br><br>Summo sensibus cum ne, et duo torquatos conceptam. No aeque elitr constituam qui. Nostro corpora nec no, diam verterem tincidunt has et. Altera accumsan urbanitas pro eu, ei assum voluptaria sed. Eam tibique nominavi consequuntur an.<br><br>Ei perfecto delicata usu, quo eius noster blandit te. Eu doctus volumus pri. Meis argumentum an nam, eos odio prima autem an. Te complectitur intellegebat pro, ius id alterum maiestatis. Ea facer accusata sed, ex illum antiopam quo.<br><br>Altera putent pri ad, in phaedrum dissentiunt per. Te eum everti dolores. Ut mea vero autem viderer, mel brute harum senserit id. Minim senserit eloquentiam duo in, sit ei justo graece petentium. Sea id homero oporteat invenire.<br><br>Pri semper dolorum ad. Cu eius repudiare eos. Eum in eleifend necessitatibus. Ne has mutat intellegebat.</p>[/html]]]></field>
+			<field name="news_extended"><![CDATA[[html]<p><strong>Lorem ipsum</strong> is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It&#039;s also called placeholder (or filler) text. It&#039;s a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it&#039;s not genuine, correct, or comprehensible Latin anymore.</p>
+<p>While <strong>lorem ipsum</strong>&#039;s still resembles classical Latin, it actually has no meaning whatsoever. As Cicero&#039;s text doesn&#039;t contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the  typographic appearence of European languages, as are digraphs not to be found in the original.</p>[/html]]]></field>
+			<field name="news_meta_title"></field>
+			<field name="news_meta_keywords">keyword1,keyword2</field>
+			<field name="news_meta_description">Description for Facebook and search engines.</field>
+			<field name="news_meta_robots"></field>
+			<field name="news_datestamp">1641407400</field>
+			<field name="news_modified">1662199710</field>
+			<field name="news_author">1</field>
+			<field name="news_category">1</field>
+			<field name="news_allow_comments">0</field>
+			<field name="news_start">0</field>
+			<field name="news_end">0</field>
+			<field name="news_class">0</field>
+			<field name="news_render_type">0,2</field>
+			<field name="news_comment_total">0</field>
+			<field name="news_summary">Summo sensibus cum ne, et duo torquatos conceptam. No aeque elitr constituam qui. Nostro corpora nec no, diam verterem tincidunt has et.</field>
+			<field name="news_thumbnail">{e_THEME}aeolus/install/blog/1.jpg,,,,</field>
+			<field name="news_sticky">0</field>
+			<field name="news_template">default</field>
+		</item>
+		<item>
+			<field name="news_id">2</field>
+			<field name="news_title">News Item 2</field>
+			<field name="news_sef">news-item-2</field>
+			<field name="news_body"><![CDATA[[html]<p>Lorem ipsum dolor sit amet, no meis semper dicunt est, petentium eloquentiam quo ne. At vero facer eam. Ex nam altera oportere, nisl natum prima id pro. Rebum augue dissentiet eum te, vel veniam eirmod option ea, at eos velit repudiare. Ius sumo dicit adolescens id, an cum efficiantur concludaturque.<br><br>Summo sensibus cum ne, et duo torquatos conceptam. No aeque elitr constituam qui. Nostro corpora nec no, diam verterem tincidunt has et. Altera accumsan urbanitas pro eu, ei assum voluptaria sed. Eam tibique nominavi consequuntur an.<br><br>Ei perfecto delicata usu, quo eius noster blandit te. Eu doctus volumus pri. Meis argumentum an nam, eos odio prima autem an. Te complectitur intellegebat pro, ius id alterum maiestatis. Ea facer accusata sed, ex illum antiopam quo.<br><br>Altera putent pri ad, in phaedrum dissentiunt per. Te eum everti dolores. Ut mea vero autem viderer, mel brute harum senserit id. Minim senserit eloquentiam duo in, sit ei justo graece petentium. Sea id homero oporteat invenire.<br><br>Pri semper dolorum ad. Cu eius repudiare eos. Eum in eleifend necessitatibus. Ne has mutat intellegebat.</p>[/html]]]></field>
+			<field name="news_extended"><![CDATA[[html]<p><strong>Lorem ipsum</strong> is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It&#039;s also called placeholder (or filler) text. It&#039;s a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it&#039;s not genuine, correct, or comprehensible Latin anymore.</p>
+<p>While <strong>lorem ipsum</strong>&#039;s still resembles classical Latin, it actually has no meaning whatsoever. As Cicero&#039;s text doesn&#039;t contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the  typographic appearence of European languages, as are digraphs not to be found in the original.</p>[/html]]]></field>
+			<field name="news_meta_title"></field>
+			<field name="news_meta_keywords">keyword3</field>
+			<field name="news_meta_description">Description for Facebook and search engines.</field>
+			<field name="news_meta_robots"></field>
+			<field name="news_datestamp">1642298400</field>
+			<field name="news_modified">1662199694</field>
+			<field name="news_author">1</field>
+			<field name="news_category">1</field>
+			<field name="news_allow_comments">0</field>
+			<field name="news_start">0</field>
+			<field name="news_end">0</field>
+			<field name="news_class">0</field>
+			<field name="news_render_type">0,2</field>
+			<field name="news_comment_total">0</field>
+			<field name="news_summary">No aeque elitr constituam qui. Nostro corpora nec no, diam verterem tincidunt has et. Summo sensibus cum ne, et duo torquatos conceptam.</field>
+			<field name="news_thumbnail">{e_THEME}aeolus/install/blog/3.jpg,,,,</field>
+			<field name="news_sticky">0</field>
+			<field name="news_template">default</field>
+		</item>
+		<item>
+			<field name="news_id">3</field>
+			<field name="news_title">News Item 3</field>
+			<field name="news_sef">news-item-3</field>
+			<field name="news_body"><![CDATA[[html]<p>Lorem ipsum dolor sit amet, no meis semper dicunt est, petentium eloquentiam quo ne. At vero facer eam. Ex nam altera oportere, nisl natum prima id pro. Rebum augue dissentiet eum te, vel veniam eirmod option ea, at eos velit repudiare. Ius sumo dicit adolescens id, an cum efficiantur concludaturque.<br><br>Summo sensibus cum ne, et duo torquatos conceptam. No aeque elitr constituam qui. Nostro corpora nec no, diam verterem tincidunt has et. Altera accumsan urbanitas pro eu, ei assum voluptaria sed. Eam tibique nominavi consequuntur an.<br><br>Ei perfecto delicata usu, quo eius noster blandit te. Eu doctus volumus pri. Meis argumentum an nam, eos odio prima autem an. Te complectitur intellegebat pro, ius id alterum maiestatis. Ea facer accusata sed, ex illum antiopam quo.<br><br>Altera putent pri ad, in phaedrum dissentiunt per. Te eum everti dolores. Ut mea vero autem viderer, mel brute harum senserit id. Minim senserit eloquentiam duo in, sit ei justo graece petentium. Sea id homero oporteat invenire.<br><br>Pri semper dolorum ad. Cu eius repudiare eos. Eum in eleifend necessitatibus. Ne has mutat intellegebat.</p>[/html]]]></field>
+			<field name="news_extended"><![CDATA[[html]<p><strong>Lorem ipsum</strong> is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It&#039;s also called placeholder (or filler) text. It&#039;s a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it&#039;s not genuine, correct, or comprehensible Latin anymore.</p>
+<p>While <strong>lorem ipsum</strong>&#039;s still resembles classical Latin, it actually has no meaning whatsoever. As Cicero&#039;s text doesn&#039;t contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the  typographic appearence of European languages, as are digraphs not to be found in the original.</p>[/html]]]></field>
+			<field name="news_meta_title"></field>
+			<field name="news_meta_keywords">keyword2</field>
+			<field name="news_meta_description">Description for Facebook and search engines.</field>
+			<field name="news_meta_robots"></field>
+			<field name="news_datestamp">1643734800</field>
+			<field name="news_modified">1662199671</field>
+			<field name="news_author">1</field>
+			<field name="news_category">1</field>
+			<field name="news_allow_comments">0</field>
+			<field name="news_start">0</field>
+			<field name="news_end">0</field>
+			<field name="news_class">0</field>
+			<field name="news_render_type">0,2</field>
+			<field name="news_comment_total">0</field>
+			<field name="news_summary">Te eum everti dolores. Ut mea vero autem viderer, mel brute harum senserit id. Minim senserit eloquentiam duo in, sit ei justo graece petentium.</field>
+			<field name="news_thumbnail">{e_THEME}aeolus/install/blog/2.jpg,,,,</field>
+			<field name="news_sticky">0</field>
+			<field name="news_template">default</field>
+		</item>
+		<item>
+			<field name="news_id">5</field>
+			<field name="news_title">News Item 1 Copy</field>
+			<field name="news_sef">news-item-1-1</field>
+			<field name="news_body"><![CDATA[[html]<p>Lorem ipsum dolor sit amet, no meis semper dicunt est, petentium eloquentiam quo ne. At vero facer eam. Ex nam altera oportere, nisl natum prima id pro. Rebum augue dissentiet eum te, vel veniam eirmod option ea, at eos velit repudiare. Ius sumo dicit adolescens id, an cum efficiantur concludaturque.<br><br>Summo sensibus cum ne, et duo torquatos conceptam. No aeque elitr constituam qui. Nostro corpora nec no, diam verterem tincidunt has et. Altera accumsan urbanitas pro eu, ei assum voluptaria sed. Eam tibique nominavi consequuntur an.<br><br>Ei perfecto delicata usu, quo eius noster blandit te. Eu doctus volumus pri. Meis argumentum an nam, eos odio prima autem an. Te complectitur intellegebat pro, ius id alterum maiestatis. Ea facer accusata sed, ex illum antiopam quo.<br><br>Altera putent pri ad, in phaedrum dissentiunt per. Te eum everti dolores. Ut mea vero autem viderer, mel brute harum senserit id. Minim senserit eloquentiam duo in, sit ei justo graece petentium. Sea id homero oporteat invenire.<br><br>Pri semper dolorum ad. Cu eius repudiare eos. Eum in eleifend necessitatibus. Ne has mutat intellegebat.</p>[/html]]]></field>
+			<field name="news_extended"><![CDATA[[html]<p><strong>Lorem ipsum</strong> is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It&#039;s also called placeholder (or filler) text. It&#039;s a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it&#039;s not genuine, correct, or comprehensible Latin anymore.</p>
+<p>While <strong>lorem ipsum</strong>&#039;s still resembles classical Latin, it actually has no meaning whatsoever. As Cicero&#039;s text doesn&#039;t contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the  typographic appearence of European languages, as are digraphs not to be found in the original.</p>[/html]]]></field>
+			<field name="news_meta_title"></field>
+			<field name="news_meta_keywords">keyword1,keyword2</field>
+			<field name="news_meta_description">Description for Facebook and search engines.</field>
+			<field name="news_meta_robots"></field>
+			<field name="news_datestamp">1641407400</field>
+			<field name="news_modified">1662467491</field>
+			<field name="news_author">1</field>
+			<field name="news_category">1</field>
+			<field name="news_allow_comments">0</field>
+			<field name="news_start">0</field>
+			<field name="news_end">0</field>
+			<field name="news_class">0</field>
+			<field name="news_render_type">0,2</field>
+			<field name="news_comment_total">0</field>
+			<field name="news_summary">Summo sensibus cum ne, et duo torquatos conceptam. No aeque elitr constituam qui. Nostro corpora nec no, diam verterem tincidunt has et.</field>
+			<field name="news_thumbnail">{e_THEME}aeolus/install/blog/1.jpg,,,,</field>
+			<field name="news_sticky">0</field>
+			<field name="news_template">default</field>
+		</item>
+		<item>
+			<field name="news_id">6</field>
+			<field name="news_title">News Item 2 Copy</field>
+			<field name="news_sef">news-item-2-2</field>
+			<field name="news_body"><![CDATA[[html]<p>Lorem ipsum dolor sit amet, no meis semper dicunt est, petentium eloquentiam quo ne. At vero facer eam. Ex nam altera oportere, nisl natum prima id pro. Rebum augue dissentiet eum te, vel veniam eirmod option ea, at eos velit repudiare. Ius sumo dicit adolescens id, an cum efficiantur concludaturque.<br><br>Summo sensibus cum ne, et duo torquatos conceptam. No aeque elitr constituam qui. Nostro corpora nec no, diam verterem tincidunt has et. Altera accumsan urbanitas pro eu, ei assum voluptaria sed. Eam tibique nominavi consequuntur an.<br><br>Ei perfecto delicata usu, quo eius noster blandit te. Eu doctus volumus pri. Meis argumentum an nam, eos odio prima autem an. Te complectitur intellegebat pro, ius id alterum maiestatis. Ea facer accusata sed, ex illum antiopam quo.<br><br>Altera putent pri ad, in phaedrum dissentiunt per. Te eum everti dolores. Ut mea vero autem viderer, mel brute harum senserit id. Minim senserit eloquentiam duo in, sit ei justo graece petentium. Sea id homero oporteat invenire.<br><br>Pri semper dolorum ad. Cu eius repudiare eos. Eum in eleifend necessitatibus. Ne has mutat intellegebat.</p>[/html]]]></field>
+			<field name="news_extended"><![CDATA[[html]<p><strong>Lorem ipsum</strong> is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It&#039;s also called placeholder (or filler) text. It&#039;s a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it&#039;s not genuine, correct, or comprehensible Latin anymore.</p>
+<p>While <strong>lorem ipsum</strong>&#039;s still resembles classical Latin, it actually has no meaning whatsoever. As Cicero&#039;s text doesn&#039;t contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the  typographic appearence of European languages, as are digraphs not to be found in the original.</p>[/html]]]></field>
+			<field name="news_meta_title"></field>
+			<field name="news_meta_keywords">keyword3</field>
+			<field name="news_meta_description">Description for Facebook and search engines.</field>
+			<field name="news_meta_robots"></field>
+			<field name="news_datestamp">1642298400</field>
+			<field name="news_modified">1662467485</field>
+			<field name="news_author">1</field>
+			<field name="news_category">1</field>
+			<field name="news_allow_comments">0</field>
+			<field name="news_start">0</field>
+			<field name="news_end">0</field>
+			<field name="news_class">0</field>
+			<field name="news_render_type">0,2</field>
+			<field name="news_comment_total">0</field>
+			<field name="news_summary">No aeque elitr constituam qui. Nostro corpora nec no, diam verterem tincidunt has et. Summo sensibus cum ne, et duo torquatos conceptam.</field>
+			<field name="news_thumbnail">{e_THEME}aeolus/install/blog/3.jpg,,,,</field>
+			<field name="news_sticky">0</field>
+			<field name="news_template">default</field>
+		</item>
+		<item>
+			<field name="news_id">8</field>
+			<field name="news_title">News Item 3 Copy</field>
+			<field name="news_sef">news-item-3-4</field>
+			<field name="news_body"><![CDATA[[html]<p>Lorem ipsum dolor sit amet, no meis semper dicunt est, petentium eloquentiam quo ne. At vero facer eam. Ex nam altera oportere, nisl natum prima id pro. Rebum augue dissentiet eum te, vel veniam eirmod option ea, at eos velit repudiare. Ius sumo dicit adolescens id, an cum efficiantur concludaturque.<br><br>Summo sensibus cum ne, et duo torquatos conceptam. No aeque elitr constituam qui. Nostro corpora nec no, diam verterem tincidunt has et. Altera accumsan urbanitas pro eu, ei assum voluptaria sed. Eam tibique nominavi consequuntur an.<br><br>Ei perfecto delicata usu, quo eius noster blandit te. Eu doctus volumus pri. Meis argumentum an nam, eos odio prima autem an. Te complectitur intellegebat pro, ius id alterum maiestatis. Ea facer accusata sed, ex illum antiopam quo.<br><br>Altera putent pri ad, in phaedrum dissentiunt per. Te eum everti dolores. Ut mea vero autem viderer, mel brute harum senserit id. Minim senserit eloquentiam duo in, sit ei justo graece petentium. Sea id homero oporteat invenire.<br><br>Pri semper dolorum ad. Cu eius repudiare eos. Eum in eleifend necessitatibus. Ne has mutat intellegebat.</p>[/html]]]></field>
+			<field name="news_extended"><![CDATA[[html]<p><strong>Lorem ipsum</strong> is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It&#039;s also called placeholder (or filler) text. It&#039;s a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it&#039;s not genuine, correct, or comprehensible Latin anymore.</p>
+<p>While <strong>lorem ipsum</strong>&#039;s still resembles classical Latin, it actually has no meaning whatsoever. As Cicero&#039;s text doesn&#039;t contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the  typographic appearence of European languages, as are digraphs not to be found in the original.</p>[/html]]]></field>
+			<field name="news_meta_title"></field>
+			<field name="news_meta_keywords">keyword2</field>
+			<field name="news_meta_description">Description for Facebook and search engines.</field>
+			<field name="news_meta_robots"></field>
+			<field name="news_datestamp">1643734800</field>
+			<field name="news_modified">1662467498</field>
+			<field name="news_author">1</field>
+			<field name="news_category">1</field>
+			<field name="news_allow_comments">0</field>
+			<field name="news_start">0</field>
+			<field name="news_end">0</field>
+			<field name="news_class">0</field>
+			<field name="news_render_type">0,2</field>
+			<field name="news_comment_total">0</field>
+			<field name="news_summary">Te eum everti dolores. Ut mea vero autem viderer, mel brute harum senserit id. Minim senserit eloquentiam duo in, sit ei justo graece petentium.</field>
+			<field name="news_thumbnail">{e_THEME}aeolus/install/blog/2.jpg,,,,</field>
+			<field name="news_sticky">0</field>
+			<field name="news_template">default</field>
+		</item>
+	</dbTable>
+	</database>
+</e107Export>
