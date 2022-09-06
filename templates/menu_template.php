@@ -350,7 +350,7 @@ $MENU_TEMPLATE['features-twelve']['end'] 			= '
 
 
 
-$MENU_TEMPLATE['services-seven']['start'] 		= '
+$MENU_TEMPLATE['services-seven']['start'] 		= '{SETSTYLE=none}
   <!-- Start Services Area -->
   <section id="services" class="services-area services-seven">
     <!--======  Start Section Title Three ======-->

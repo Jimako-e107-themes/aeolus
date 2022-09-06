@@ -8,49 +8,58 @@
  *
 */
 
-if(!defined('e107_INIT'))
+if (!defined('e107_INIT'))
 {
 	exit;
 }
 
 $PAGE_WRAPPER = array();
 
-$PAGE_WRAPPER['default']['CPAGESUBTITLE']   = '<h4>{---}</h4>';
+$pageheader =
+	'<div class="e107-page-header breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 ">
+                <div class="banner-content d-flex flex-column justify-content-center">
+                    <h1 class="page-title">{CPAGETITLE}</h1>
+					{CPAGESUBTITLE}
+                </div>
+                {---BREADCRUMB---}
+            </div>
+        </div>
+    </div>
+</div>';
+
+$PAGE_WRAPPER['default']['CPAGESUBTITLE']   = '<p>{---}</p>';
 $PAGE_WRAPPER['default']['CPAGEMESSAGE']    = '{---}<div class="clear"><!-- --></div>';
 $PAGE_WRAPPER['default']['CPAGEAUTHOR']     = "{---}, ";
 $PAGE_WRAPPER['default']['CPAGENAV']        = '<div class="f-right pull-right float-right col-md-3">{---}</div>';
 
+$PAGE_WRAPPER['2columns'] = $PAGE_WRAPPER['default'];
+$PAGE_WRAPPER['fullwidth'] = $PAGE_WRAPPER['default'];
 
 #### default template - BC ####
 // used only for parsing comment outside of the page tablerender-ed content
 // leave empty if you integrate page comments inside the main page template
 
 
-$PAGE_TEMPLATE['default']['page'] = '
-		{PAGE}
-		{PAGECOMMENTS}
-	';
+
+
+
 
 // always used - it's inside the {PAGE} sc from 'page' template
 $PAGE_TEMPLATE['default']['start'] = '<div id="{CPAGESEF}" class="cpage_body cpage-body">{CHAPTER_BREADCRUMB}';
 
 // page body
 $PAGE_TEMPLATE['default']['body'] = '
-		{CPAGEMESSAGE}
-		
-		{CPAGESUBTITLE}
-        <span class="m-3">{CPAGEEDIT}</span>
+		{CPAGEMESSAGE}	
 		<div class="clear"><!-- --></div>
-		
 		{CPAGENAV}
 		{CPAGEBODY}
-		
 		<div class="clear"><!-- --></div>
+		<span class="m-3">{CPAGEEDIT}</span>
 		{CPAGERATING}
-		
-
-
-	';
+		{PAGECOMMENTS}';
 
 // {CPAGEFIELD: name=image}
 
@@ -88,7 +97,7 @@ $PAGE_TEMPLATE['default']['notfound'] = '
 
 // always used
 $PAGE_TEMPLATE['default']['end'] = '{CPAGERELATED: types=page,news}</div>';
-
+ 
 // options per template - disable table render
 //	$PAGE_TEMPLATE['default']['noTableRender'] = false; //XXX Deprecated
 
@@ -105,19 +114,38 @@ $PAGE_TEMPLATE['default']['related']['end'] = '</div>';
 
 #### No table render example template ####
 
+/*******************  END OF DEFAULT TEMPLATE *******************/
 
-$PAGE_TEMPLATE['custom']['start'] = '<div id="{CPAGESEF}" class="cpage-body">';
-$PAGE_TEMPLATE['custom']['body'] = '';
-$PAGE_TEMPLATE['custom']['authorize'] = '
-	';
+/* DEFAULT PAGE LAYOUT */
+$PAGE_TEMPLATE['default']['page'] = $pageheader . '<div class="container my-5">{PAGE}</div>';
 
-$PAGE_TEMPLATE['custom']['restricted'] = '
-	';
+/* FULLWIDTH PAGE LAYOUT */
+$PAGE_TEMPLATE['fullwidth'] =  $PAGE_TEMPLATE['default'];
+$PAGE_TEMPLATE['fullwidth']['page'] = $pageheader . '<div class="container-fluid my-5">{PAGE}</div>';
 
-$PAGE_TEMPLATE['custom']['end'] = '</div>';
-$PAGE_TEMPLATE['custom']['tableRender'] = '';
+/*  BARE PAGE LAYOUT - no additional HTML markup - used custom key to override core one */
+$PAGE_TEMPLATE['custom'] =  $PAGE_TEMPLATE['default'];
+$PAGE_TEMPLATE['custom']['page'] = '
+{PAGE}';
+$PAGE_TEMPLATE['custom']['body'] = '<style>.cpage_body { padding-top: 100px; } </style>  {CPAGEBODY}';
+
+/* 2 COLUMNS LAYOUT With menu */
+$PAGE_TEMPLATE['2columns'] =  $PAGE_TEMPLATE['default'];
+$PAGE_TEMPLATE['2columns']['page'] = $pageheader . '<div class="container my-5">{PAGE}</div>';
+
+$PAGE_TEMPLATE['2columns']['body'] = '
+	<div class="row"> 
+		<div class="col-md-6"><h2 class="my-2">{CPAGETITLE}</h2><h3 class="my-2">{CPAGESUBTITLE}</h3>
+		{CPAGEBODY}
+		</div>
+		<div class="col-md-6"><h3 class="my-2">{CMENUTITLE}</h3>
+		{CMENUBODY}
+		</div>
+		<span class="m-3">{CPAGEEDIT}</span>
+	</div>';
 
 
+/* how to rid this key? */
 $PAGE_WRAPPER['profile']['CMENUIMAGE: template=profile'] = '<span class="page-profile-image pull-left col-xs-12 col-sm-4 col-md-4">{---}</span>';
 $PAGE_TEMPLATE['profile'] = $PAGE_TEMPLATE['default'];
 $PAGE_TEMPLATE['profile']['body'] = '
@@ -134,17 +162,5 @@ $PAGE_TEMPLATE['profile']['body'] = '
 		{CPAGERATING}
 		{CPAGEEDIT}
 	';
-	
-	
-	
-	
 
-
-
-
-
-
-
-	
-	
-	
+ 
