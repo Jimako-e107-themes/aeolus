@@ -7,45 +7,101 @@
  */
 
 if (!defined('e107_INIT'))  exit;
-
-
-$NEWS_TEMPLATE = array();
-
-$grid_templates = e107::getTemplate('news', 'news_grid');
-//print_a($grid_templates);
  
-$NEWS_MENU_TEMPLATE['list']['start']       = '<div class="thumbnails">';
-$NEWS_MENU_TEMPLATE['list']['end']         = '</div>';
+// latest-news-area - default list of latest news
 
-
-$NEWS_INFO = array(
-	'default' 	=> array('title' => "Default - Ayro Blog 02", 	'description' => 'unused'),
-	'list' 	    => array('title' => LAN_LIST, 		'description' => 'unused'),
-
-);
 
 //see issue = #4847
 $NEWS_TEMPLATE['default']['caption'] = NULL;
-$NEWS_TEMPLATE['default'] 	= $grid_templates['blog-02']; 
-$NEWS_TEMPLATE['list'] 		= $grid_templates['blog-02']; 
-$NEWS_TEMPLATE['category']  = $grid_templates['blog-05']; 
+
+$NEWS_TEMPLATE['default']['start'] =
+	'<section class="section latest-news-area blog-list">
+	<div class="container">
+	  <div class="row">{SETIMAGE: w=700&h=500&crop=1}';
+
+$NEWS_TEMPLATE['default']['item'] =
+' <div class="col-lg-4 col-md-6 col-12 blog-style-two">
+            <div class="single-news">
+               <div class="image">
+                  <img class="thumb" src="{NEWS_IMAGE: type=src&placeholder=true}" alt="{NEWS_TITLE}" />
+				  <div class="meta-details"><span class="text-uppercase">{NEWS_CATEGORY_NAME}</span></div>
+               </div>
+               <div class="content-body blog-content">
+                   <h4 class="title">
+                     <a href="{NEWSURL}">
+                     {NEWS_TITLE}
+                     </a>
+                  </h4>
+				  <p class="text">{NEWS_SUMMARY}</p>
+				  <span><i class="lni lni-calendar"></i> {NEWS_DATE=short}</span>
+               </div>
+            </div>
+            <!-- single-news -->
+         </div>
+        ';
+
+$NEWS_TEMPLATE['default']['featured'] = $NEWS_BLOGS_TEMPLATE['blog-11']['item'];
+
+$NEWS_TEMPLATE['default']['end'] = '</div></div></section>';
+
+
+ 
+$NEWS_TEMPLATE['list'] 		= $NEWS_TEMPLATE['default'];
+
+// Blog Style 5
+$NEWS_TEMPLATE['category']['start'] =
+	'<section class="blog-area pb-5">
+	<div class="container">
+	  <div class="row">{SETIMAGE: w=700&h=500&crop=1}';
+
+$NEWS_TEMPLATE['category']['item'] =
+	'<div class="col-lg-6">
+	<div class="single-blog blog-style-five d-sm-flex">
+	  <div class="blog-image">
+		<a href="{NEWSURL}"><img src="{NEWS_IMAGE: type=src&placeholder=true}" alt="{NEWS_TITLE}"/></a>
+	  </div>
+	  <div class="blog-content media-body">
+			<h4 class="blog-title">
+			<a href="{NEWSURL}">
+			{NEWS_TITLE}
+			</a>
+			</h4>
+		<span><i class="lni lni-calendar"></i> {NEWS_DATE=short}</span>
+		<span>{NEWSCOMMENTS}</span>
+		<p class="text">{NEWS_SUMMARY}</p>
+		<a
+		  class="more"
+		  href="{NEWSURL}"
+		  >{LAN=READ_MORE}</a
+		>
+	  </div>
+	</div>
+</div>';
+
+$NEWS_TEMPLATE['category']['featured'] = $NEWS_BLOGS_TEMPLATE['blog-05']['item'];
+
+$NEWS_TEMPLATE['category']['end'] = '</div></div></section>';
+
+ 
+$NEWS_TEMPLATE['2-column']  = $NEWS_BLOGS_TEMPLATE['blog-11'];
+
+$NEWS_TEMPLATE['blog-04']  = $NEWS_BLOGS_TEMPLATE['blog-04']; 
+$NEWS_TEMPLATE['blog-10']  = $NEWS_BLOGS_TEMPLATE['blog-10'];  
+
+
+//Note info keys are merged, so core one has to be used at first 
+$NEWS_INFO = array(
+	'default' 	=> array('title' => "Default grid"),
+	'list' 	    => array('title' => "Default grid"),
+	'category' 	    => array('title' => "Category List",  'description' => 'unused'),
+);
+
+
  
 $NEWS_TEMPLATE['default']['caption'] 	= '{NEWSCATEGORY}';
 $NEWS_TEMPLATE['list']['caption'] 		= '{NEWSCATEGORY}';
  
-/**
- * @todo (experimental)
- */
-$NEWS_TEMPLATE['2-column']['caption']  = '{NEWS_CATEGORY_NAME}';
-$NEWS_TEMPLATE['2-column']['start']    = '<div class="row">';
-$NEWS_TEMPLATE['2-column']['item']     = '<div class="item col-md-6">
-											{SETIMAGE: w=400&h=400&crop=1}
-											{NEWSTHUMBNAIL=placeholder}
-	                                            <h3>{NEWS_TITLE}</h3>
-	                                            <p>{NEWS_SUMMARY}</p>
-	                                         	<p class="text-right text-end"><a class="btn btn-primary btn-othernews" href="{NEWSURL}">' . LAN_READ_MORE . '</a></p>
-            							  </div>';
-$NEWS_TEMPLATE['2-column']['end']      = '</div>';
+ 
 
 
 ### Related 'start' - Options: Core 'single' shortcodes including {SETIMAGE}
