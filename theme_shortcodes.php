@@ -4,46 +4,7 @@ class theme_shortcodes extends e_shortcode
 {
 
 	var $override = true;
-
-	/**
-	 * Special Header Shortcode for dynamic menuarea templates.
-	 * @shortcode {---HEADER---}
-	 * @return string
-	 */
-	function sc_header()
-	{
-		$theme_name = e107::getPref('sitetheme');
  
-		$pref = e107::getThemeConfig($theme_name)->getPref();
- 
-		$key = 	varset($pref['navbar'], 'navbar-01');
-
-		$themepath = e_THEME . $theme_name;
-
-		$path_html = "{$themepath}/components/navbars/{$key}.html";
-
-		$path_css =  "components/navbars/{$key}.css";
-	 
-		if (file_exists($path_html))
-		{
-			$text = file_get_contents($path_html);
-			$text = e107::getParser()->parseTemplate($text);
-		}
-		else
-		{
-			$text = '';
-		}
-
-		$path_css =  "components/navbars/{$key}.css";
-
-		if (file_exists($themepath . "/" . $path_css))
-		{
-			e107::css("url", $themepath . "/" . $path_css);
-		}
-
-		return $text;
-	}
-
 	/**
 	 * Special Footer Shortcode for dynamic menuarea templates.
 	 * @shortcode {---FOOTER---}
@@ -132,10 +93,10 @@ class theme_shortcodes extends e_shortcode
 		$key = varset($parm['key'], 'default');
 
 		$themepath = e_THEME . e107::getPref('sitetheme');
-
+ 
 		$path_html = "{$themepath}/components/{$type}/{$key}.html";
 		$path_css =  "components/{$type}/{$key}.css";
-
+ 
 		if (file_exists($path_html))
 		{
 			$text = file_get_contents($path_html);
@@ -282,17 +243,24 @@ class theme_shortcodes extends e_shortcode
 		if ($display)
 		{
 			e107::js('theme', 'js/preloader.js', 'jquery');
+			e107::css('theme', 'css/preloader.css');
 			$text =
-				'<!-- Preloader -->
-		   <div class="preloader">
-			   <div class="preloader-inner">
-				   <div class="preloader-icon">
-					   <span></span>
-					   <span></span>
-				   </div>
-			   </div>
-		   </div>
-		   <!-- /End Preloader -->';
+			'<div class="preloader">
+				<div class="loader">
+					<div class="spinner">
+						<div class="spinner-container">
+							<div class="spinner-rotator">
+								<div class="spinner-left">
+									<div class="spinner-circle"></div>
+								</div>
+								<div class="spinner-right">
+									<div class="spinner-circle"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>';
 		}
 
 		return $text;

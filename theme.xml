@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e107Theme name="Aeolus Theme " version="1.0.0" date="2022-07-26" compatibility="2.3.1">
 	<author name ="Jimako" url="https://www.e107sk.com" />
-	<summary lan="">Aeolus Bootstrap 5 e107 theme based on AYRO UI Components</summary>
-	<description lan="">Aeolus Bootstrap 5 e107 theme based on AYRO UI Components</description>
+	<summary lan="">AEOLUS Bootstrap 5 e107 theme based on AYRO UI Components</summary>
+	<description lan="">AEOLUS The god of the winds.</description>
 	<keywords>
 		<word>bootstrap</word>
 		<word>responsive</word>
@@ -25,21 +25,24 @@
 		<layout name='home' title='Home Page 1 Header' >
 			<custompages>FRONTPAGE</custompages>
 		</layout>
-        <layout name='home2' title='Home Page 2 Slider' >
-	        <custompages>slider/</custompages>
-		</layout>
 		<layout name='full' title='Full Page' default='true' >
 			<custompages>forum/ download/</custompages>
 		</layout>
+        <layout name='cpage'
+            title='Layout for custom pages'
+            default='true'>
+            <custompages>:page/view/index :page/view/other</custompages>
+        </layout>
 		<layout name='sidebar_right' title='Sidebar (right)'>
         <custompages>:news/view/item</custompages>
         </layout>
 		<layout name='splash' title='Splash Page' >
 			<custompages>login fpw signup</custompages>
 		</layout>
-		<layout name='bare' title='Bare Page' >
-			<custompages></custompages>
-		</layout>
+        <layout name='bare'
+            title='No page title' >
+            <custompages></custompages>
+        </layout>
 	</layouts>
     <glyphicons>
 		<glyph name='lineicons' pattern='\.(lni-[a-z-]*)::before\{'  path='assets/css/lineicons.min.css' class='lni' prefix='lni' tag='i' />

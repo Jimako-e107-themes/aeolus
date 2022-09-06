@@ -15,6 +15,10 @@ Buttons
 Lists
 Blog Style 1
 
+### Custom stuff
+
+Navbars
+
 
 ### App Bootstrap 5 HTML template
 
@@ -41,12 +45,13 @@ Free and Premium components used in APP:
 
 https://ayroui.com/bootstrap-components
 
-
+Navbar Style 8
 Blog Style 2
 Blog Style 5
 Blog Style 8
 Blog Style 10
 Contact Style 4
+
 
 
 

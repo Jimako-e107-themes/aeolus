@@ -37,6 +37,7 @@ class theme_config implements e_theme_config
 		return array(
 			'preloader' => array('title' => 'Display preloader', 'type' => 'boolean',  'writeParms' => array(), 'help' => ''),
 			'backtotop' => array('title' => 'Display Back Top Button', 'type' => 'boolean',  'writeParms' => array(), 'help' => ''),
+			'stickynavbar' => array('title' => 'Sticky Navbar', 'type' => 'boolean',  'writeParms' => array(), 'help' => ''),
 			'navbar'    => array('title' => 'Select Navbar', 'type' => 'dropdown', 'writeParms' => array('optArray' => $navbars)),
 			'footer'    => array('title' => 'Select Footer', 'type' => 'dropdown', 'writeParms' => array('optArray' => $footers)),
 		);

@@ -1,49 +1,8 @@
-/* ===== Buttons Css ===== */
-.primary-btn {
-  background: var(--primary);
-  color: var(--white);
-  box-shadow: var(--shadow-2);
-}
-.active.primary-btn, .primary-btn:hover, .primary-btn:focus {
-  background: var(--primary-dark);
-  color: var(--white);
-  box-shadow: var(--shadow-4);
-}
-.deactive.primary-btn {
-  background: var(--gray-4);
-  color: var(--dark-3);
-  pointer-events: none;
-}
-
-.primary-btn-outline {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-.active.primary-btn-outline, .primary-btn-outline:hover, .primary-btn-outline:focus {
-  background: var(--primary-dark);
-  color: var(--white);
-}
-.deactive.primary-btn-outline {
-  color: var(--dark-3);
-  border-color: var(--gray-4);
-  pointer-events: none;
-}
-
-/*===========================
-  NAVBAR css 
-===========================*/
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.mb-100 {
-  margin-bottom: 100px;
-}
-
 /*===== NAVBAR FIVE =====*/
 .navbar-area.navbar-five {
   background: var(--primary);
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-area.navbar-five {
     padding: 10px 0;
@@ -111,7 +70,7 @@
 .navbar-area.navbar-five .navbar .navbar-nav .nav-item:last-child {
   margin-right: 0;
 }
-.navbar-area.navbar-five .navbar .navbar-nav .nav-item a {
+.navbar-area.navbar-five .navbar .navbar-nav .nav-item>a {
   display: flex;
   align-items: center;
   padding: 30px 0;

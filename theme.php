@@ -21,18 +21,14 @@ class theme implements e_theme_render
 
 	public function __construct()
 	{
-
 		///// CONSTANTS ////////////////////////////////////////////////////
 		define("THEME_DISCLAIMER", '');
 		define('COMMENTLINK', 	e107::getParser()->toGlyph('lni-comments-alt'));  //works only in __construct() 
-
 	}
 
 	public function init()
 	{
 		e107::lan('theme');
-
-
 
 		////// Your own css fixes ////////////////////////////////////////////////////
 		define('CORE_CSS', true);
@@ -53,7 +49,7 @@ class theme implements e_theme_render
 		$this->register_icons();
 
 		/////// Inline css and js /////////////////////////////////////////////////////
-		$this->getInlineCodes();
+	//	$this->getInlineCodes();
 	}
 
 	public function set_metas()
@@ -63,27 +59,29 @@ class theme implements e_theme_render
 
 	public function register_css()
 	{
-		$sitetheme = e107::getPref('sitetheme');
 
 		//e107::css('theme', 'e107.css');  //if define('CORE_CSS', false);
 
 		//e107::css('theme', 'assets/css/bootstrap.min.css');
 
 		e107::css('theme', 'assets/css/glightbox.min.css');
-		e107::css('theme', 'assets/css/lineicons.min.css');
+	
 		//e107::css('theme', 'assets/css/loading-bar.min.css');
 		e107::css('theme', 'assets/css/tiny-slider.css');
 
         //original css    e107::css('theme', 'theme.css');
+
 		e107::css('theme', 'css/starter.css');   //core
+		e107::css('theme', 'css/navbars.css');   // general 
 		e107::css('theme', 'css/form-elements.css');   //core
 		e107::css('theme', 'css/button-page.css');   //core
 		e107::css('theme', 'css/scroll-top.css');
 		e107::css('theme', 'css/list-style/list-style.css');   //core
+ 
+
 		e107::css('theme', 'css/section-title/section-title-02.css');   //app template
 		e107::css('theme', 'css/section-title/section-title-03.css');   //startup template
-		//e107::css('theme', 'css/navbars/navbar-01.css');   //core
-		//e107::css('theme', 'css/headers/header-10.css');   //app template
+
 		e107::css('theme', 'css/clients/clients-03.css');   //app template
 		e107::css('theme', 'css/features/feature-12.css');   //app template
 		e107::css('theme', 'css/about/about-08.css');   //app template		
@@ -106,6 +104,7 @@ class theme implements e_theme_render
 		//new e107 stuff - news grid template
 		e107::css('theme', 'css/blogs/blog-01.css');
 		e107::css('theme', 'css/blogs/blog-02.css');
+		e107::css('theme', 'css/blogs/blog-04.css');
 		e107::css('theme', 'css/blogs/blog-05.css');
 		e107::css('theme', 'css/blogs/blog-08.css');
 		e107::css('theme', 'css/blogs/blog-10.css');  //menus in sidebar
@@ -125,9 +124,18 @@ class theme implements e_theme_render
 		e107::js('theme', 'assets/js/glightbox.min.js', 'jquery');
 		//e107::js('theme', 'assets/js/loading-bar.min.js', 'jquery');
 		e107::js('theme', 'assets/js/tiny-slider.js', 'jquery');
-		e107::js('theme', 'assets/js/main.js', 'jquery');
 
-		//e107::js('theme', 'fix.js', 'jquery');
+		e107::js('theme', 'js/navbar.js', 'jquery');
+
+		$stickynavbar = e107::pref('theme', 'stickynavbar');
+	 
+		$stickynavbar = varset($stickynavbar, true);
+		if ($stickynavbar)
+		{
+			e107::js('theme', 'js/stickynavbar.js', 'jquery');
+		}
+ 
+		e107::js('theme', 'js/fix.js', 'jquery');
 	}
 
 	public function register_fonts()

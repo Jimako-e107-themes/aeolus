@@ -1,17 +1,10 @@
-/*===========================
-  NAVBAR css 
-===========================*/
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.mb-100 {
-  margin-bottom: 100px;
-}
-
 /*===== NAVBAR EIGHT =====*/
-.navbar-eight .inner-header {
+
+.navbar-area.navbar-eight {
   background-color: var(--light-2);
+}
+ 
+.navbar-eight .inner-header {
   padding: 0 20px;
   border-radius: 10px;
   position: relative;
@@ -97,7 +90,7 @@
 .navbar-eight .navbar-nav .nav-item:last-child {
   margin-right: 0;
 }
-.navbar-eight .navbar-nav .nav-item a {
+.navbar-eight .navbar-nav .nav-item>a {
   display: flex;
   align-items: center;
   padding: 32px 0;
