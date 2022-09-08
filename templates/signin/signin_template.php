@@ -17,6 +17,7 @@ $SIGNIN_TEMPLATE['signin'] = '
 					<div class="dropdown-menu" style="min-width:250px; padding: 15px; padding-bottom: 0px;">
 					
 					{SIGNIN_FORM=start}
+					{SIGNIN_LOGINMESSAGE}
 					<p>{SIGNIN_INPUT_USERNAME}</p>
 					<p>{SIGNIN_INPUT_PASSWORD}</p>
 	
@@ -29,8 +30,8 @@ $SIGNIN_TEMPLATE['signin'] = '
 					{LAN=LAN_LOGINMENU_6}</label>
 					</div>
 					<div class="d-grid gap-2" style="padding-bottom:15px">
-					<input class="btn btn-primary btn-block" type="submit" name="userlogin" id="bs3-userlogin" value="{LAN=LAN_LOGINMENU_51}">			
-					<a href="{SIGNIN_FPW_HREF}" class="nav-link btn btn-default btn-secondary">{LAN=LAN_LOGINMENU_4}</a>
+					<input class="btn primary-btn" type="submit" name="userlogin" id="bs3-userlogin" value="{LAN=LAN_LOGINMENU_51}">			
+					<a href="{SIGNIN_FPW_HREF}" class="btn btn-fpw">{LAN=LAN_LOGINMENU_4}</a>
 					{SIGNIN_RESEND_HREF}
 					</div>
 					{SIGNIN_FORM=end}

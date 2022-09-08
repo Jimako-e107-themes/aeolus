@@ -15,29 +15,41 @@ if (!defined('e107_INIT'))  exit;
 $NEWS_TEMPLATE['default']['caption'] = NULL;
 
 $NEWS_TEMPLATE['default']['start'] =
-	'<section class="section latest-news-area blog-list">
+'<section class="blog-area pb-5">
 	<div class="container">
 	  <div class="row">{SETIMAGE: w=700&h=500&crop=1}';
 
 $NEWS_TEMPLATE['default']['item'] =
-' <div class="col-lg-4 col-md-6 col-12 blog-style-two">
-            <div class="single-news">
-               <div class="image">
-                  <img class="thumb" src="{NEWS_IMAGE: type=src&placeholder=true}" alt="{NEWS_TITLE}" />
-				  <div class="meta-details"><span class="text-uppercase">{NEWS_CATEGORY_NAME}</span></div>
-               </div>
-               <div class="content-body blog-content">
-                   <h4 class="title">
-                     <a href="{NEWSURL}">
-                     {NEWS_TITLE}
-                     </a>
-                  </h4>
-				  <p class="text">{NEWS_SUMMARY}</p>
-				  <span><i class="lni lni-calendar"></i> {NEWS_DATE=short}</span>
-               </div>
-            </div>
-            <!-- single-news -->
-         </div>
+'
+<div class="col-lg-6">
+	<div class="single-blog blog-style-four">
+		<div class="blog-image">
+			<img class="thumb" src="{NEWS_IMAGE: type=src&placeholder=true}" alt="{NEWS_TITLE}" />
+			<div class="meta-info">
+				<span><i class="lni lni-calendar"></i> {NEWS_DATE=short}</span>
+				<span>{NEWSCOMMENTS}</span>
+			</div>
+		</div>
+		<div class="blog-content">
+			<h4 class="blog-title">
+			<a href="{NEWSURL}">
+			{NEWS_TITLE}
+			</a>
+			</h4>
+			<p class="text">
+			{NEWS_SUMMARY}
+			</p>
+			<div class="rounded-buttons">
+			<a
+			class="btn primary-btn-outline rounded-full"
+			href="{NEWSURL}"
+			>{LAN=READ_MORE}</a
+			>
+			</div>
+		</div>
+	</div>
+</div>
+ 
         ';
 
 $NEWS_TEMPLATE['default']['featured'] = $NEWS_BLOGS_TEMPLATE['blog-11']['item'];

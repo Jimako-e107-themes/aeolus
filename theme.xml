@@ -17,7 +17,7 @@
 		<library name="fontawesome" version="5" scope="wysiwyg" files="css" />
 	</libraries>
 	<stylesheets>
-        <css file="default.css" name="Default" default='true'  scope='front'/>
+        <css file="style.css" name="Default" default='true'  scope='front' exclude="bootstrap5"/>
         <css file="assets/css/lineicons.min.css" name="Default" scope='wysiwyg' />
         <css file="theme.css" name="Theme css" scope='wysiwyg' />
 	</stylesheets>   

@@ -1,13 +1,66 @@
- 
 {SETSTYLE=none}
-{COMPONENT: type=navbars&key=navbar-05}
-{COMPONENT: type=headers&key=header-11}
-{SETSTYLE=none}
-{ALERTS}
-{MENUAREA=1}
-  
-{SETSTYLE=section} <!-- Example -->
-{---}
-<div class="container">
-{MENU=2}
+<section class="navbar-area navbar-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar justify-content-between navbar-expand-lg">
+                    <a class="navbar-brand" href="{SITEURL}">
+                        {SITELOGO: h=80}
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHome"
+                        aria-controls="navbarHome" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbarHome">
+                        <ul class="navbar-nav ms-auto">
+                            {NAVIGATION=main}
+                        </ul>
+                        <ul class="navbar-nav navbar-right signin">
+                            {SIGNIN}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="header-area header-wmessage">
+    <div id="home" class="header-hero bg_cover" style="background-image: url({THEME}images/paralax.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10">
+                    <div class="header-content text-center">
+                        {SETSTYLE=heading-3}
+                        {WMESSAGE=force}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clouds-wrap">
+            <div class="clouds"></div>
+        </div>
+        <div class="header-shape">
+            <img src="{THEME}images/header/header-shape-2.svg" alt="shape" />
+        </div>
+    </div>
+</section>
+
+<div class="home">
+    {ALERTS}
+    {SETSTYLE=none}
+    {CMENU=about-eight}
+    {MENU: path=news/news_grid&limit=3}
+    {MENU: path=news/news_grid&limit=3}
+    {CMENU=features-twelve}
+    {MENUAREA=1}
+    
+    {SETSTYLE=section}
+    {---}
+
+    <div class="container">
+    {MENUAREA=2}
+    </div>
 </div>
+ 

@@ -15,7 +15,7 @@ $NEWS_GRID_TEMPLATE['col-md-4']['start'] = '    <section class="blog-area pb-5">
 
 $NEWS_GRID_TEMPLATE['col-md-4']['item'] =
 '          <div class="col-lg-4 col-md-8 col-sm-10">
-	<div class="single-blog blog-style-two">
+	<div class="single-blog news-grid-classic">
 	  <div class="blog-image">
 	  {SETIMAGE: w=700&h=500&crop=1}{NEWSTHUMBNAIL=placeholder}
 	  </div>

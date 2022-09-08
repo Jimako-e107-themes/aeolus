@@ -31,7 +31,7 @@ class theme implements e_theme_render
 		e107::lan('theme');
 
 		////// Your own css fixes ////////////////////////////////////////////////////
-		define('CORE_CSS', true);
+		define('CORE_CSS', false);
 
 		////// Theme meta tags /////////////////////////////////////////////////////////
 		$this->set_metas();
@@ -60,22 +60,15 @@ class theme implements e_theme_render
 	public function register_css()
 	{
 
-		//e107::css('theme', 'e107.css');  //if define('CORE_CSS', false);
-
-		//e107::css('theme', 'assets/css/bootstrap.min.css');
+		e107::css('theme', 'aeolus-css/e107.css');  //if define('CORE_CSS', false);
 
 		e107::css('theme', 'assets/css/glightbox.min.css');
 	
 		//e107::css('theme', 'assets/css/loading-bar.min.css');
 		e107::css('theme', 'assets/css/tiny-slider.css');
 
-        //original css    e107::css('theme', 'theme.css');
-
-		e107::css('theme', 'css/starter.css');   //core
-		e107::css('theme', 'css/navbars.css');   // general 
-		e107::css('theme', 'css/form-elements.css');   //core
-		e107::css('theme', 'css/button-page.css');   //core
-		e107::css('theme', 'css/scroll-top.css');
+        e107::css('theme', 'default.css');
+ 
 		e107::css('theme', 'css/list-style/list-style.css');   //core
  
 
@@ -103,7 +96,7 @@ class theme implements e_theme_render
 
 		//new e107 stuff - news grid template
 		e107::css('theme', 'css/blogs/blog-01.css');
-		e107::css('theme', 'css/blogs/blog-02.css');
+ 
 		e107::css('theme', 'css/blogs/blog-04.css');
 		e107::css('theme', 'css/blogs/blog-05.css');
 		e107::css('theme', 'css/blogs/blog-08.css');
@@ -112,9 +105,7 @@ class theme implements e_theme_render
 		
 		//new e107 stuff - contact page
 		e107::css('theme', 'css/contact/contact-04.css');
-
-		//missing stuff, quick fixes and css no used in sass version 
-		e107::css('theme', 'style.css');
+ 
 	}
 
 	public function register_js()
@@ -147,13 +138,13 @@ class theme implements e_theme_render
 
 	public function register_fonts()
 	{
-		e107::css('url', 'https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+		//e107::css('url', 'https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 	}
 
 	public function register_icons()
 	{
-		//	e107::css('theme', 'assets/css/lineicons.css');
-		e107::css('url', 'https://cdn.lineicons.com/3.0/lineicons.css');
+		 e107::css('theme', 'assets/css/lineicons.min.css');
+		//e107::css('url', 'https://cdn.lineicons.com/3.0/lineicons.css');
 	}
 
 	public function getInlineCodes()
