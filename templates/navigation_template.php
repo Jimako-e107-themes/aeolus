@@ -132,7 +132,7 @@ $NAVIGATION_TEMPLATE['side']['submenu_end'] = '';
 
 // Footer links.  - ie. 3 columns of links.
 
-$NAVIGATION_TEMPLATE['footer']['start'] = '<ul>';
+$NAVIGATION_TEMPLATE['footer']['start'] = '<ul class="nav-footer {NAV_CLASS}">';
 $NAVIGATION_TEMPLATE['footer']['item'] = "<li><a href='{NAV_LINK_URL}'{NAV_LINK_OPEN} title=\"{NAV_LINK_DESCRIPTION}\">{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>\n";
 $NAVIGATION_TEMPLATE['footer']['item_submenu'] = $NAVIGATION_TEMPLATE['footer']['item'];
 $NAVIGATION_TEMPLATE['footer']['item_active'] = "<li><a href='{NAV_LINK_URL}' title=\"{NAV_LINK_DESCRIPTION}\">{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>\n";
