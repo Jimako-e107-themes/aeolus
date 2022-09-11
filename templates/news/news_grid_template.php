@@ -29,7 +29,7 @@ $NEWS_GRID_TEMPLATE['col-md-4']['item'] =
 		<span><i class="lni lni-comments-alt"></i> {NEWSCOMMENTS}</span>
 		<p class="text">{NEWS_SUMMARY}</p>
 		<a
-		  class="btn primary-btn-outline rounded-full"
+		  class="btn btn-news-grid"
 		  href="{NEWSURL}"
 		  >{LAN=READ_MORE}</a
 		>

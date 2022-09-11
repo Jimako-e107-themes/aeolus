@@ -29,8 +29,7 @@ $CONTACT_WRAPPER['info']['CONTACT_INFO: type=hours'] = "<div>{GLYPH=fa-clock} {-
 
 $CONTACT_TEMPLATE['info'] =
 '
-
-      <div class="row">
+     <div class="row">
          <div class="col-lg-12">
             <div class="contact-map-four">
                {CONTACT_MAP: zoom=city}
@@ -81,13 +80,8 @@ $CONTACT_TEMPLATE['info'] =
          </div>
          <!-- row -->
       </div>
-      <!-- contact info -->
-
-  
-           
-' 
-;
-
+      <!-- contact info -->';
+/*
 // Shortcode wrappers. not working in 2.3.1
 $CONTACT_WRAPPER['menu']['CONTACT_IMAGECODE'] 			= '
 <div class="col-lg-4 col-md-4 col-12"> 
@@ -112,7 +106,7 @@ $CONTACT_WRAPPER['menu']['CONTACT_GDPR_CHECK'] 			= '
         </div>
     </div> 
 </div>';
- 
+ */
 /* prepared version with wrappers */ 
 $CONTACT_TEMPLATE['menu-default'] =  '
     <div class="form-main"> 
@@ -148,8 +142,8 @@ $CONTACT_TEMPLATE['menu-default'] =  '
 			{CONTACT_IMAGECODE_INPUT}       
 			                  
             <div class="col-12">                                        
-                <div class="form-group light-rounded-buttons">                                            
-				{CONTACT_SUBMIT_BUTTON: class=btn primary-btn w-auto fw-bold}                                         
+                <div class="light-rounded-buttons">                                            
+				{CONTACT_SUBMIT_BUTTON: class=btn btn-contact-menu}                                         
                 </div>                                    
             </div>                                
         </div>                                          
@@ -207,8 +201,8 @@ $CONTACT_TEMPLATE['menu'] =  '
 			{CONTACT_IMAGECODE_INPUT}       
 </div>		                  
             <div class="col-12">                                        
-                <div class="form-group light-rounded-buttons">                                            
-				{CONTACT_SUBMIT_BUTTON: class=btn primary-btn w-auto fw-bold}                                         
+                <div class="light-rounded-buttons">                                            
+				{CONTACT_SUBMIT_BUTTON: class=btn btn-contact-menu}                                         
                 </div>                                    
             </div>                                
         </div>                                          
@@ -224,11 +218,65 @@ $CONTACT_WRAPPER['form']['CONTACT_EMAIL_COPY'] 			= "<div class='control-group f
 $CONTACT_WRAPPER['form']['CONTACT_PERSON']				= "<div class='control-group form-group'><label for='contactPerson'>{LAN=CONTACT_14}</label>{---}</div>";
  
 
-$CONTACT_TEMPLATE['form'] = "
-	<form action='" . e_SELF . "' method='post' id='contactForm' class='mt-5' >
-	{CONTACT_PERSON} ".
-$CONTACT_TEMPLATE['menu-default'] . "
-	</form>";
+$CONTACT_TEMPLATE['form'] = '
+	<form action="' . e_SELF . '" method="post" id="contactForm" class="mt-5" >
+	{CONTACT_PERSON}  
+    <div class="form-main"> 
+        <div class="row">                                    
+            <div class="col-lg-6 col-md-6 col-12">                                        
+                <div class="form-group">                                            
+				{CONTACT_NAME: placeholder=Your Name}                                         
+                </div>                                    
+            </div>                                    
+            <div class="col-lg-6 col-md-6 col-12">                                        
+                <div class="form-group">                                            
+				{CONTACT_SUBJECT: placeholder=Your Subject}                                         
+                </div>                                    
+            </div>                                    
+            <div class="col-lg-6 col-md-6 col-12">                                        
+                <div class="form-group">                                              
+				{CONTACT_EMAIL: placeholder=Your Email}                                         
+                </div>                                    
+            </div>                                    
+            <div class="col-lg-6 col-md-6 col-12">                                        
+                <div class="form-group">                                            
+                    <input name="phone" type="text" placeholder="Your Phone" 
+					required="required" />                                        
+                </div>                                    
+            </div>                                    
+            <div class="col-12">                                        
+                <div class="form-group message">                                            
+				{CONTACT_BODY: placeholder=Your Message}                                                                                    
+                </div>                                    
+            </div>    
+			 
+            <div class="col-12"> 
+    <div class="form-group mb-3">
+        <label for="gdpr">{LAN=CONTACT_24}
+        </label>
+        <div class="checkbox">{CONTACT_GDPR_CHECK}{LAN=CONTACT_21}
+            <div class="help-block">{CONTACT_GDPR_LINK}
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="col-lg-4 col-md-4 col-12"> 
+    <div class="form-group mb-3">{CONTACT_IMAGECODE_LABEL}
+         {CONTACT_IMAGECODE} 
+    </div>
+</div>
+<div class="col-lg-8 col-md-8 col-12">
+			 	
+			{CONTACT_IMAGECODE_INPUT}       
+</div>		                  
+            <div class="col-12">                                        
+                <div class="light-rounded-buttons">                                            
+				{CONTACT_SUBMIT_BUTTON: class=btn btn-contact-page}                                         
+                </div>                                    
+            </div>                                
+        </div>                                          
+    </div> 
+	</form>';
  
 
 
@@ -236,27 +284,22 @@ $CONTACT_TEMPLATE['menu-default'] . "
 $CONTACT_TEMPLATE['layout'] = '
 <!--====== CONTACT FOUR PART START ======-->
 <section class="contact-area contact-area-four">
-   <div class="container">
-		{---CONTACT-INFO---}
-   </div>
-   <!-- container -->
- 
-
- 
+<div class="container">
+{---CONTACT-INFO---}
+</div>
+<!-- container -->
 <div class="container contact-us">
-      <div class="row">
-         <div class="col-lg-12">
-             
-               <h4 class="contact-title">
-                  <i class="lni lni-envelope"></i> Leave <span>A Message.</span>
-               </h4>
-							   {---CONTACT-FORM---} 
-							      </div>
-								   </div>
-          
-      </div>
-      <!-- row -->
-   <!-- container -->
+<div class="row">
+<div class="col-lg-12">
+<h4 class="contact-title">
+<i class="lni lni-envelope"></i> Leave <span>A Message.</span>
+</h4>
+{---CONTACT-FORM---} 
+</div>
+</div>
+</div>
+<!-- row -->
+<!-- container -->
 </section><!--====== CONTACT FOUR PART ENDS ======-->
 							   ';
 

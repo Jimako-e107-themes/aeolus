@@ -41,7 +41,7 @@ $NEWS_TEMPLATE['default']['item'] =
 			</p>
 			<div class="rounded-buttons">
 			<a
-			class="btn primary-btn-outline rounded-full"
+			class="btn btn-news-default "
 			href="{NEWSURL}"
 			>{LAN=READ_MORE}</a
 			>

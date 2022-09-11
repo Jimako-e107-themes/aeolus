@@ -76,14 +76,12 @@ class theme implements e_theme_render
 		e107::css('theme', 'css/section-title/section-title-03.css');   //startup template
 
 		e107::css('theme', 'css/clients/clients-03.css');   //app template
-		e107::css('theme', 'css/features/feature-12.css');   //app template
-		e107::css('theme', 'css/about/about-08.css');   //app template		
+		e107::css('theme', 'css/features/feature-12.css');   //app template	
 		e107::css('theme', 'css/videos/video-01.css');   //core
 		e107::css('theme', 'css/pricings/pricing-13.css');   //app template	
 		e107::css('theme', 'css/sliders/slider-07.css');   //app template	
-		e107::css('theme', 'css/call-to-action/call-to-action-03.css');   //app template
 		e107::css('theme', 'css/teams/team-07.css');   //app template
-		e107::css('theme', 'css/contact/contact-06.css');	//app template
+ 
 		// e107::css('theme', 'css/footers/footer-05.css');	//app template
 		e107::css('theme', 'css/services/service-07.css');	//startup template
         e107::css('theme', 'css/videos/video-02.css');   //startup template        

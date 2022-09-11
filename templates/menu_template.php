@@ -49,7 +49,7 @@ $MENU_TEMPLATE['call-action-three']['body'] 		= '
             </h2>
             <p class="text">{CMENUBODY}</p>
             <div class="action-btn rounded-buttons">
-				{CPAGEBUTTON: class=btn primary-btn rounded-full}
+				{CPAGEBUTTON: class=btn btn-cmenu}
             </div>
           </div>
           <!-- call action content -->
@@ -82,7 +82,7 @@ $MENU_TEMPLATE['about-eight']['body'] 		= '
             </h3>
             <p>{CMENUBODY}</p>
             <div class="light-rounded-buttons">
-              {CPAGEBUTTON: class=btn primary-btn-outline}
+              {CPAGEBUTTON: class=btn btn-cmenu-outline}
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@ $MENU_TEMPLATE['client-logo-two']['end'] 			= '
 </section>
 <!--====== CLIENT LOGO PART ENDS ======-->';
 
-$MENU_TEMPLATE['contact-us']['start'] 		= '<!-- Start Contact Area -->
+$MENU_TEMPLATE['contact-us']['start'] 		= '<!-- Start Contact Area -->{SETSTYLE=none}
   <section id="contact" class="contact-us">
     <!--======  Start Section Title Two ======-->
     <div class="section-title-two">
