@@ -127,78 +127,126 @@ Info: Title, rounded buttons, primary button
     "__tabs__": {
         "additional": "Additional"
     },
-    "feature-01-icon": {
-        "title": "Feature 01 Icon",
+    "item-01-icon": {
+        "title": "Item 01 Icon",
         "type": "icon",
         "writeParms": "",
         "help": ""
     },
-    "feature-01-title": {
-        "title": "Feature 01 Title",
+    "item-01-subtitle": {
+        "title": "Item 01 SubTitle",
         "type": "text",
         "writeParms": "",
         "help": ""
     },
-    "feature-01-text": {
-        "title": "Feature 01 Text",
+    "item-01-title": {
+        "title": "Item 01 Title",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-01-summary": {
+        "title": "Item 01 Text",
         "type": "textarea",
         "writeParms": "",
         "help": ""
     },
-    "feature-02-icon": {
-        "title": "Feature 02 Icon",
+    "item-01-url": {
+        "title": "Item 01 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-02-icon": {
+        "title": "Item 02 Icon",
         "type": "icon",
         "writeParms": "",
         "help": ""
     },
-    "feature-02-title": {
-        "title": "Feature 02 Title",
+    "item-02-title": {
+        "title": "Item 02 Title",
         "type": "text",
         "writeParms": "",
         "help": ""
     },
-    "feature-02-text": {
-        "title": "Feature 02 Text",
+    "item-02-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },    
+    "item-02-summary": {
+        "title": "Item 02 Text",
         "type": "textarea",
         "writeParms": "",
         "help": ""
     },
-    "feature-03-icon": {
-        "title": "Feature 03 Icon",
+    "item-02-url": {
+        "title": "Item 02 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-icon": {
+        "title": "Item 03 Icon",
         "type": "icon",
         "writeParms": "",
         "help": ""
     },
-    "feature-03-title": {
-        "title": "Feature 03 Title",
+    "item-03-title": {
+        "title": "Item 03 Title",
         "type": "text",
         "writeParms": "",
         "help": ""
     },
-    "feature-03-text": {
-        "title": "Feature 03 Text",
+    "item-03-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-summary": {
+        "title": "Item 03 Text",
         "type": "textarea",
         "writeParms": "",
         "help": ""
     },
-    "feature-04-icon": {
-        "title": "Feature 04 Icon",
+    "item-03-url": {
+        "title": "Item 03 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-icon": {
+        "title": "Item 04 Icon",
         "type": "icon",
         "writeParms": "",
         "help": ""
     },
-    "feature-04-title": {
-        "title": "Feature 04 Title",
+    "item-04-title": {
+        "title": "Item 04 Title",
         "type": "text",
         "writeParms": "",
         "help": ""
     },
-    "feature-04-text": {
-        "title": "Feature 04 Text",
+    "item-04-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-summary": {
+        "title": "Item 04 Text",
         "type": "textarea",
         "writeParms": "",
         "help": ""
-    }
+    },
+    "item-04-url": {
+        "title": "Item 04 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
 }</field>
 		</item>
 		<item>
@@ -874,18 +922,18 @@ Morbi porta leo iaculis, hendrerit lorem interdum, porta dui. Integer tempor con
 			<field name="page_template">default</field>
 			<field name="page_order">10005</field>
 			<field name="page_fields">{
-    "feature-01-icon": "lni-rocket.glyph",
-    "feature-01-title": "Super Fast",
-    "feature-01-text": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolor",
-    "feature-02-icon": "lni-wechat.glyph",
-    "feature-02-title": "Live Chat",
-    "feature-02-text": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolor",
-    "feature-03-icon": "lni-layers.glyph",
-    "feature-03-title": "Secure Data",
-    "feature-03-text": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor",
-    "feature-04-icon": "lni-timer.glyph",
-    "feature-04-title": "Optimize Time",
-    "feature-04-text": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor"
+    "item-01-icon": "lni-rocket.glyph",
+    "item-01-title": "Super Fast",
+    "item-01-summary": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolor",
+    "item-02-icon": "lni-wechat.glyph",
+    "item-02-title": "Live Chat",
+    "item-02-summary": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolor",
+    "item-03-icon": "lni-layers.glyph",
+    "item-03-title": "Secure Data",
+    "item-03-summary": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor",
+    "item-04-icon": "lni-timer.glyph",
+    "item-04-title": "Optimize Time",
+    "item-04-summary": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor"
 }</field>
 			<field name="menu_name">features-twelve</field>
 			<field name="menu_title">Checkout Our Software  Features Below.</field>

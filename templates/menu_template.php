@@ -299,10 +299,10 @@ $MENU_TEMPLATE['features-twelve']['body'] =
 	     <!-- Start Single Feature -->
           <div class="features-style-twelve">
             <div class="feature-icon">
-              {CPAGEFIELD: name=feature-01-icon}
+              {CPAGEFIELD: name=item-01-icon}
             </div>
-            <h4>{CPAGEFIELD: name=feature-01-title}</h4>
-            <p>{CPAGEFIELD: name=feature-01-text}</p>
+            <h4>{CPAGEFIELD: name=item-01-title}</h4>
+            <p>{CPAGEFIELD: name=item-01-text}</p>
           </div>
           <!-- End Single Feature -->
         </div>
@@ -310,10 +310,10 @@ $MENU_TEMPLATE['features-twelve']['body'] =
           <!-- Start Single Feature -->
           <div class="features-style-twelve">
             <div class="feature-icon">
-              <i class="lni lni-wechat"></i>{CPAGEFIELD: name=feature-02-icon}
+              <i class="lni lni-wechat"></i>{CPAGEFIELD: name=item-02-icon}
             </div>
-            <h4>{CPAGEFIELD: name=feature-02-title}</h4>
-            {CPAGEFIELD: name=feature-01-text}
+            <h4>{CPAGEFIELD: name=item-02-title}</h4>
+            {CPAGEFIELD: name=item-02-text}
           </div>
           <!-- End Single Feature -->
         </div>
@@ -321,10 +321,10 @@ $MENU_TEMPLATE['features-twelve']['body'] =
           <!-- Start Single Feature -->
           <div class="features-style-twelve">
             <div class="feature-icon">
-              <i class="lni lni-layers"></i>{CPAGEFIELD: name=feature-03-icon}
+              <i class="lni lni-layers"></i>{CPAGEFIELD: name=item-03-icon}
             </div>
-            <h4>{CPAGEFIELD: name=feature-03-title}</h4>
-            {CPAGEFIELD: name=feature-01-text}
+            <h4>{CPAGEFIELD: name=item-03-title}</h4>
+            {CPAGEFIELD: name=item-03-text}
           </div>
           <!-- End Single Feature -->
         </div>
@@ -332,10 +332,10 @@ $MENU_TEMPLATE['features-twelve']['body'] =
           <!-- Start Single Feature -->
           <div class="features-style-twelve">
             <div class="feature-icon">
-              <i class="lni lni-timer"></i>{CPAGEFIELD: name=feature-04-icon}
+              <i class="lni lni-timer"></i>{CPAGEFIELD: name=item-04-icon}
             </div>
-            <h4>{CPAGEFIELD: name=feature-04-title}</h4>
-            {CPAGEFIELD: name=feature-01-text}
+            <h4>{CPAGEFIELD: name=item-04-title}</h4>
+            {CPAGEFIELD: name=item-04-text}
           </div>
           <!-- End Single Feature -->
         </div>
@@ -348,7 +348,18 @@ $MENU_TEMPLATE['features-twelve']['end'] 			= '
 </section>
  <!-- /End Features Area -->';
 
-
+	
+$MENU_TEMPLATE['home-services']['start'] 			= '<div class="col-lg-12 text-center">
+								                    <h2 class="section-heading">{CHAPTER_NAME}</h2>
+								                    <h3 class="section-subheading text-muted">{CHAPTER_DESCRIPTION}</h3>
+								                </div><div class="row text-center">';
+$MENU_TEMPLATE['home-services']['body'] 				= '<div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i>
+													<i class="fa fa-{CMENUICON=css} fa-stack-1x fa-inverse"></i>
+													</span><h4 class="service-heading">{CMENUTITLE}</h4>
+														<p class="text-muted">{CMENUBODY}</div>';
+$MENU_TEMPLATE['home-services']['end'] 				= '</div>';
+    
+    
 
 $MENU_TEMPLATE['services-seven']['start'] 		= '{SETSTYLE=none}
   <!-- Start Services Area -->
@@ -359,11 +370,9 @@ $MENU_TEMPLATE['services-seven']['start'] 		= '{SETSTYLE=none}
         <div class="row">
           <div class="col-12">
             <div class="content">
-              <h5>{CHAPTER_NAME}</h5>
+              <h5>{CPAGETITLE}</h5>
               <h2 class="fw-bold">{CMENUTITLE}</h2>
               <p>{CMENUBODY}
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
               </p>
             </div>
           </div>
@@ -378,33 +387,33 @@ $MENU_TEMPLATE['services-seven']['start'] 		= '{SETSTYLE=none}
    ';
 $MENU_TEMPLATE['services-seven']['body'] =
 '
-<div class="col-lg-4 col-md-6 col-12">
-	<div class="single-service">
+<div class="col-lg-4 col-md-6 col-12 ">
+	<div class="single-service h-100">
 		<span class="serial">01</span>
 		<h4>{CPAGEFIELD: name=service-01-title}</h4>
 		<p>{CPAGEFIELD: name=service-01-text}</p>
 		<div class="light-rounded-buttons">
-		<a href="{CPAGEFIELD: name=service-01-url}" class="btn primary-btn"> Read More </a>
+		<a href="{CPAGEFIELD: name=service-01-url}" class="btn primary-btn"> {LAN=READ_MORE} </a>
 		</div>
 	</div>
 </div>
 <div class="col-lg-4 col-md-6 col-12">
-	<div class="single-service">
+	<div class="single-service h-100">
 		<span class="serial">02</span>
 		<h4>{CPAGEFIELD: name=service-02-title}</h4>
 		<p>{CPAGEFIELD: name=service-02-text}</p>
 		<div class="light-rounded-buttons">
-		<a href="{CPAGEFIELD: name=service-02-url}" class="btn primary-btn"> Read More </a>
+		<a href="{CPAGEFIELD: name=service-02-url}" class="btn primary-btn"> {LAN=READ_MORE} </a>
 		</div>
 	</div>
 </div>
 <div class="col-lg-4 col-md-6 col-12">
-	<div class="single-service">
+	<div class="single-service h-100">
 		<span class="serial">03</span>
 		<h4>{CPAGEFIELD: name=service-03-title}</h4>
 		<p>{CPAGEFIELD: name=service-03-text}</p>
 		<div class="light-rounded-buttons">
-		<a href="{CPAGEFIELD: name=service-03-url}" class="btn primary-btn"> Read More </a>
+		<a href="{CPAGEFIELD: name=service-03-url}" class="btn primary-btn"> {LAN=READ_MORE} </a>
 		</div>
 	</div>
 </div>		  
