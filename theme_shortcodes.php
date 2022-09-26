@@ -344,7 +344,11 @@ class theme_shortcodes extends e_shortcode
 	 **/
 	public function sc_default_menuarea($parm)
 	{
-		$path = $parm;
+		$defaultmenuarea = e107::pref('theme', 'defaultmenuarea');
+		if(!$defaultmenuarea) {
+			return "";
+		}
+		//$path = $parm;
 		/* don't render anything for default layout, let it on core, it has to be set in Menu Manager for default layout */
 		if (THEME_LAYOUT == e107::getPref('sitetheme_deflayout'))
 		{

@@ -23,6 +23,8 @@ class theme_config implements e_theme_config
 			'preloader' => array('title' => 'Display preloader', 'type' => 'boolean',  'writeParms' => array(), 'help' => ''),
 			'backtotop' => array('title' => 'Display Back Top Button', 'type' => 'boolean',  'writeParms' => array(), 'help' => ''),
 			'stickynavbar' => array('title' => 'Sticky Navbar', 'type' => 'boolean',  'writeParms' => array(), 'help' => ''),
+			'defaultmenuarea' => array('title' => 'Default MenuArea Support', 'type' => 'boolean',  'writeParms' => array(), 
+			'help' => 'With On - default menus will be displayed on all layouts'),
 		);
 	}
 

@@ -8,74 +8,71 @@
     
  
     {---LAYOUT---}
- 
+ {GALLERY_PORTFOLIO: placeholder=1&category=2}
 <footer class="footer-area footer" itemscope="" itemtype="https://schema.org/WPFooter">
     <div class="footer-widget">
         <div class="container">
             <!-- row -->
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-sm-12">
-                    <div class="f-about">
-                        {SETSTYLE=none}
-                        {DEFAULT_MENUAREA=45}
-                        {MENUAREA=45}
-                    </div>
-                    <div class="footer-support">
-                        {SETSTYLE=none}
-                        {DEFAULT_MENUAREA=46}
-                        {MENUAREA=46}
-                        <span class="number"><i class="lni lni-phone-set"></i>{CONTACT_INFO: type=phone1}</span>
-                        <span class="mail"><i class="lni lni-envelope"></i>{CONTACT_INFO: type=email1}</span>
+                <div class="col-xl-4 col-lg-4 col-sm-6 footer-column">
+                    {SETSTYLE=footer-menu}
+                    {DEFAULT_MENUAREA=41}
+                    {MENUAREA=41}
+
+                    <!-- just for demo area 41 -->
+                    <div class="footer-menu">
+                        <div class="footer-text">
+                            <span class="number"><i class="lni lni-phone-set"></i>{CONTACT_INFO: type=phone1}</span>
+                            <span class="mail"><i class="lni lni-envelope"></i>{CONTACT_INFO: type=email1}</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-2 col-sm-4">
-                    <div class="footer-link">
-                        {SETSTYLE=footer-heading6}
-                        {DEFAULT_MENUAREA=41}
-                        {MENUAREA=41}
-                        <!-- just for demo  -->
-                        <h6 class="footer-title">Footer links</h6>
+                <div class="col-xl-2 col-lg-2 col-sm-6 footer-column">
+                    {SETSTYLE=footer-menu}
+                    {DEFAULT_MENUAREA=42}
+                    {MENUAREA=42}
+                    <!-- just for demo area 42 -->
+                    <div class="footer-menu">
+                    <h6 class="footer-title">Footer links</h6>
                         {NAVIGATION: type=footer&layout=footer}
                         <!-- just for demo  -->
                     </div>
-                    <!-- footer link -->
                 </div>
-                <div class="col-xl-2 col-lg-3 col-sm-4">
-                    <div class="footer-link">
-                        {SETSTYLE=footer-heading6}
-                        {DEFAULT_MENUAREA=42}
-                        {MENUAREA=42}
-                        <!-- just for demo   
-                        <h6 class="footer-title">Footer links</h6>
-                        {NAVIGATION: type=main&layout=footer}
-                          just for demo  -->
-                    </div>
-                    <!-- footer link -->
-                </div>
-                <div class="col-xl-2 col-lg-3 col-sm-4">
-                    <div class="footer-link">
-                        {SETSTYLE=footer-heading6}
+                <div class="col-xl-2 col-lg-2 col-sm-6 footer-column">
+                        {SETSTYLE=footer-menu}
                         {DEFAULT_MENUAREA=43}
                         {MENUAREA=43}
-                        {MENUAREA=43}
-                        <!-- just for demo  -->
-                        <h6 class="footer-title">Footer links</h6>
-                        {NAVIGATION: type=main&layout=footer}
-                        <!-- just for demo  -->
-                    </div>
-                    <!-- footer link -->
+                        <!-- just for demo area 43 --> 
+                        <div class="footer-menu">
+                            <h6 class="footer-title">Footer links</h6>
+                            {NAVIGATION: type=main&layout=footer}
+                        </div>
+                        <!--  just for demo  -->
                 </div>
-                <div class="col-xl-2 col-lg-3 col-sm-4">
-                    <div class="footer-app-store">
-                        {SETSTYLE=footer-heading5}
+                <div class="col-xl-2 col-lg-2 col-sm-6 footer-column">
+                        {SETSTYLE=footer-menu}
                         {DEFAULT_MENUAREA=44}
                         {MENUAREA=44}
-                        {MENUAREA=44}
+                        <!-- just for demo area 44 -->
+                        <div class="footer-menu"> 
+                            <h6 class="footer-title">Footer links</h6>
+                            {NAVIGATION: type=main&layout=footer}
+                        </div>
                         <!-- just for demo  -->
-                        <h6 class="footer-title">Footer links</h6>
-                        {NAVIGATION: type=main&layout=footer}
+                    
+                    <!-- footer link -->
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-4 footer-column">
+                        {SETSTYLE=footer-menu}
+                        {DEFAULT_MENUAREA=45}
+                        {MENUAREA=45}
+                        <!-- just for demo area 45 -->
+                        <div class="footer-menu">
+                            <h6 class="footer-title">Footer links</h6>
+                            {NAVIGATION: type=main&layout=footer}
+                        </div>
                         <!-- just for demo  -->
-                    </div>
+                   
                 </div>
             </div>
             <!-- row -->
@@ -88,17 +85,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="
-                  copyright
-                  text-center
-                  d-md-flex
-                  justify-content-between
-                  align-items-center
-                ">
+                    <div class="copyright text-center d-md-flex justify-content-between align-items-center">
                         <p class="text">{SITEDISCLAIMER}</p>
                         {XURL_ICONS: template=footer}
                     </div>
-                    <!-- copyright -->
                 </div>
             </div>
             <!-- row -->
