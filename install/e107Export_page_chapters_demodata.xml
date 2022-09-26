@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<e107Export version="2.3.3" timestamp="1664224120" >
+	<database>
+	<dbTable name="page_chapters">
+		<item>
+			<field name="chapter_id">1</field>
+			<field name="chapter_parent">0</field>
+			<field name="chapter_name">General</field>
+			<field name="chapter_sef">general</field>
+			<field name="chapter_meta_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tempor odio. Quisque volutpat lorem nec lectus congue suscipit. In hac habitasse platea dictumst. Etiam odio nisi, egestas vitae amet.</field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">0</field>
+			<field name="chapter_template"></field>
+			<field name="chapter_visibility">0</field>
+			<field name="chapter_fields"></field>
+		</item>
+		<item>
+			<field name="chapter_id">2</field>
+			<field name="chapter_parent">1</field>
+			<field name="chapter_name">Information</field>
+			<field name="chapter_sef">information</field>
+			<field name="chapter_meta_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nunc ac neque egestas ullamcorper. In convallis semper hendrerit. Etiam non dolor nisl, varius facilisis dui. Nunc egestas massa nunc.</field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">1</field>
+			<field name="chapter_template">default</field>
+			<field name="chapter_visibility">0</field>
+			<field name="chapter_fields"></field>
+		</item>
+		<item>
+			<field name="chapter_id">3</field>
+			<field name="chapter_parent">0</field>
+			<field name="chapter_name">Portfolio</field>
+			<field name="chapter_sef">portfolio</field>
+			<field name="chapter_meta_description">Lorem ipsum dolor sit amet consectetur.</field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">200</field>
+			<field name="chapter_template">portfolio</field>
+			<field name="chapter_visibility">0</field>
+			<field name="chapter_fields"></field>
+		</item>
+		<item>
+			<field name="chapter_id">11</field>
+			<field name="chapter_parent">4</field>
+			<field name="chapter_name">Services Default Fields</field>
+			<field name="chapter_sef">our-services</field>
+			<field name="chapter_meta_description"></field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">0</field>
+			<field name="chapter_template">default</field>
+			<field name="chapter_visibility">0</field>
+			<field name="chapter_fields">{
+    "__tabs__": {
+        "additional": "Items"
+    },
+    "item-01-title": {
+        "title": "Item 01 Title",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-01-icon": {
+        "title": "Item 01 Icon",
+        "type": "icon",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-01-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-01-summary": {
+        "title": "Item 01 Text",
+        "type": "textarea",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-01-url": {
+        "title": "Item 01 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-02-icon": {
+        "title": "Item 02 Icon",
+        "type": "icon",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-02-title": {
+        "title": "Item 02 Title",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-02-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-02-summary": {
+        "title": "Item 02 Text",
+        "type": "textarea",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-02-url": {
+        "title": "Item 02 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-icon": {
+        "title": "Item 03 Icon",
+        "type": "icon",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-title": {
+        "title": "Item 03 Title",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-summary": {
+        "title": "Item 03 Text",
+        "type": "textarea",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-url": {
+        "title": "Item 03 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-icon": {
+        "title": "Item 04 Icon",
+        "type": "icon",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-title": {
+        "title": "Item 04 Title",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-summary": {
+        "title": "Item 04 Text",
+        "type": "textarea",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-url": {
+        "title": "Item 04 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    }
+}</field>
+		</item>
+		<item>
+			<field name="chapter_id">4</field>
+			<field name="chapter_parent">0</field>
+			<field name="chapter_name">Homepage</field>
+			<field name="chapter_sef">homepage</field>
+			<field name="chapter_meta_description"></field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">0</field>
+			<field name="chapter_template">default</field>
+			<field name="chapter_visibility">0</field>
+			<field name="chapter_fields">{
+    "__tabs__": {
+        "additional": "Additional"
+    }
+}</field>
+		</item>
+		<item>
+			<field name="chapter_id">5</field>
+			<field name="chapter_parent">4</field>
+			<field name="chapter_name">CLIENT LOGOS TWO</field>
+			<field name="chapter_sef">client-logos-two</field>
+			<field name="chapter_meta_description"></field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">0</field>
+			<field name="chapter_template">default</field>
+			<field name="chapter_visibility">0</field>
+			<field name="chapter_fields">{
+    "__tabs__": {
+        "additional": "Additional"
+    },
+    "client-01": {
+        "title": "Client 1 Logo",
+        "type": "image",
+        "writeParms": "",
+        "help": ""
+    },
+    "client-02": {
+        "title": "Client 2 Logo",
+        "type": "image",
+        "writeParms": "",
+        "help": ""
+    },
+    "client-03": {
+        "title": "Client 3 Logo",
+        "type": "image",
+        "writeParms": "",
+        "help": ""
+    },
+    "client-04": {
+        "title": "Client 4 Logo",
+        "type": "image",
+        "writeParms": "",
+        "help": ""
+    },
+    "client-05": {
+        "title": "Client 5 Logo",
+        "type": "image",
+        "writeParms": "",
+        "help": ""
+    },
+    "client-06": {
+        "title": "Client 6 Logo",
+        "type": "image",
+        "writeParms": "",
+        "help": ""
+    }
+}</field>
+		</item>
+		<item>
+			<field name="chapter_id">6</field>
+			<field name="chapter_parent">4</field>
+			<field name="chapter_name">FEATURES TWELVE</field>
+			<field name="chapter_sef">features</field>
+			<field name="chapter_meta_description"></field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">0</field>
+			<field name="chapter_template">default</field>
+			<field name="chapter_visibility">0</field>
+			<field name="chapter_fields">{
+    "__tabs__": {
+        "additional": "Additional"
+    },
+    "item-01-icon": {
+        "title": "Item 01 Icon",
+        "type": "icon",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-01-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-01-title": {
+        "title": "Item 01 Title",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-01-summary": {
+        "title": "Item 01 Text",
+        "type": "textarea",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-01-url": {
+        "title": "Item 01 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-02-icon": {
+        "title": "Item 02 Icon",
+        "type": "icon",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-02-title": {
+        "title": "Item 02 Title",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-02-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },    
+    "item-02-summary": {
+        "title": "Item 02 Text",
+        "type": "textarea",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-02-url": {
+        "title": "Item 02 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-icon": {
+        "title": "Item 03 Icon",
+        "type": "icon",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-title": {
+        "title": "Item 03 Title",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-summary": {
+        "title": "Item 03 Text",
+        "type": "textarea",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-03-url": {
+        "title": "Item 03 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-icon": {
+        "title": "Item 04 Icon",
+        "type": "icon",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-title": {
+        "title": "Item 04 Title",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-subtitle": {
+        "title": "Item 01 SubTitle",
+        "type": "text",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-summary": {
+        "title": "Item 04 Text",
+        "type": "textarea",
+        "writeParms": "",
+        "help": ""
+    },
+    "item-04-url": {
+        "title": "Item 04 Read More URL",
+        "type": "url",
+        "writeParms": "",
+        "help": ""
+    },
+}</field>
+		</item>
+		<item>
+			<field name="chapter_id">7</field>
+			<field name="chapter_parent">4</field>
+			<field name="chapter_name">About Eight</field>
+			<field name="chapter_sef">about-eight</field>
+			<field name="chapter_meta_description"></field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">0</field>
+			<field name="chapter_template">default</field>
+			<field name="chapter_visibility">0</field>
+			<field name="chapter_fields">{
+    "__tabs__": {
+        "additional": "Additional"
+    }
+}</field>
+		</item>
+		<item>
+			<field name="chapter_id">8</field>
+			<field name="chapter_parent">4</field>
+			<field name="chapter_name">Bootstrap Videos</field>
+			<field name="chapter_sef">bootstrap-videos</field>
+			<field name="chapter_meta_description"></field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">0</field>
+			<field name="chapter_template">default</field>
+			<field name="chapter_visibility">0</field>
+			<field name="chapter_fields">{
+    "__tabs__": {
+        "additional": "Additional"
+    }
+}</field>
+		</item>
+		<item>
+			<field name="chapter_id">9</field>
+			<field name="chapter_parent">4</field>
+			<field name="chapter_name">Call Action three</field>
+			<field name="chapter_sef">call-action-three</field>
+			<field name="chapter_meta_description"></field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">0</field>
+			<field name="chapter_template">default</field>
+			<field name="chapter_visibility">0</field>
+			<field name="chapter_fields">{
+    "__tabs__": {
+        "additional": "Additional"
+    }
+}</field>
+		</item>
+		<item>
+			<field name="chapter_id">10</field>
+			<field name="chapter_parent">4</field>
+			<field name="chapter_name">Contact Us</field>
+			<field name="chapter_sef">contact-us</field>
+			<field name="chapter_meta_description"></field>
+			<field name="chapter_meta_keywords"></field>
+			<field name="chapter_manager">0</field>
+			<field name="chapter_icon"></field>
+			<field name="chapter_image"></field>
+			<field name="chapter_order">0</field>
+			<field name="chapter_template">default</field>
+			<field name="chapter_visibility">255</field>
+			<field name="chapter_fields">{
+    "__tabs__": {
+        "additional": "Additional"
+    }
+}</field>
+		</item>
+	</dbTable>
+	</database>
+</e107Export>

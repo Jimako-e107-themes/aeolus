@@ -36,13 +36,177 @@ $MENU_TEMPLATE['image-text-button']['start'] 		= '<div class="cpage-menu {CMENUN
 $MENU_TEMPLATE['image-text-button']['body'] 		= ' <div class="footer-logo">{CMENUIMAGE}</div>
     <div class="text">{CMENUBODY}{CPAGEBUTTON}</div>';
 $MENU_TEMPLATE['image-text-button']['end'] 			= '</div>';
+ 
+$MENU_WRAPPER['features-one']['CPAGEFIELD: name=item-01-url'] =
+'<div class="features-btn rounded-buttons"><a class="btn btn-cmenu"  href="{---}">{LAN=READ_MORE}</a></div>';
+$MENU_WRAPPER['features-one']['CPAGEFIELD: name=item-02-url'] =
+'<div class="features-btn rounded-buttons"><a class="btn btn-cmenu"  href="{---}">{LAN=READ_MORE}</a></div>';
+$MENU_WRAPPER['features-one']['CPAGEFIELD: name=item-02-url'] =
+'<div class="features-btn rounded-buttons"><a class="btn btn-cmenu"  href="{---}">{LAN=READ_MORE}</a></div>';
+
+
+
+
+
+$MENU_TEMPLATE['features-one']['start'] 		= '{SETSTYLE=none}
+  <!-- Start Services Area -->
+ <section class="features-area features-one">
+    <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-lg-6">
+            <div class="section-title text-center">
+               <h3 class="title">{CMENUTITLE}</h3>
+               <p class="text">
+                  {CMENUBODY}
+               </p>
+            </div>
+            <!-- row -->
+         </div>
+      </div>
+      <!-- row -->
+      <div class="row justify-content-center">';
+
+
+$MENU_TEMPLATE['features-one']['body'] =
+' <div class="col">
+            <div class="features-style-one text-center h-100">
+               <div class="features-icon">
+                  {CPAGEFIELD: name=item-01-icon}
+               </div>
+               <div class="features-content">
+                  <h4 class="features-title">{CPAGEFIELD: name=item-01-title}</h4>
+                  <p class="text">
+                     {CPAGEFIELD: name=item-01-summary}
+                  </p>
+                  {CPAGEFIELD: name=item-01-url}
+               </div>
+            </div>
+            <!-- single features -->
+         </div>
+         <div class="col">
+            <div class="features-style-one text-center h-100">
+               <div class="features-icon">
+                  {CPAGEFIELD: name=item-02-icon}
+               </div>
+               <div class="features-content">
+                  <h4 class="features-title">{CPAGEFIELD: name=item-02-title}</h4>
+                  <p class="text">
+                     {CPAGEFIELD: name=item-02-summary}
+                  </p>
+                 {CPAGEFIELD: name=item-02-url}
+               </div>
+            </div>
+            <!-- single features -->
+         </div>  
+         <div class="col">
+            <div class="features-style-one text-center h-100">
+               <div class="features-icon">
+                  {CPAGEFIELD: name=item-03-icon}
+               </div>
+               <div class="features-content">
+                  <h4 class="features-title">{CPAGEFIELD: name=item-03-title}</h4>
+                  <p class="text">
+                     {CPAGEFIELD: name=item-03-summary}
+                  </p>
+                  {CPAGEFIELD: name=item-03-url}
+               </div>
+            </div>
+            <!-- single features -->
+         </div>';
+
+$MENU_TEMPLATE['features-one']['end'] 			= '
+ 
+      </div>
+      <!-- row -->  
+    </div>
+    <!-- container -->
+</section>
+ <!-- /End Features Area features-one -->';
+
+$MENU_TEMPLATE['features-twelve']['start'] 		= '
+  <!-- Start Features Area -->
+  <section id="features" class="features-area features-twelve">
+    <!--======  Start Section Title Two ======-->
+    <div class="section-title-two">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="content">
+              <span>{CHAPTER_NAME}</span>
+              <h2 class="fw-bold">{CMENUTITLE}</h2>
+              <p>
+                {CMENUBODY}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!--====== End Section Title Two ======-->
+    <div class="container">
+      <div class="row">
+   ';
+$MENU_TEMPLATE['features-twelve']['body'] =
+'<div class="col">
+  <!-- Start Single Feature -->
+  <div class="features-style-twelve">
+    <div class="feature-icon">
+      {CPAGEFIELD: name=item-01-icon} 
+    </div>
+    <h4>{CPAGEFIELD: name=item-01-title} </h4>
+    <p>{CPAGEFIELD: name=item-01-summary}</p>
+  </div>
+  <!-- End Single Feature -->
+</div>
+<div class="col">
+  <!-- Start Single Feature -->
+  <div class="features-style-twelve">
+    <div class="feature-icon">
+      {CPAGEFIELD: name=item-02-icon}
+    </div>
+    <h4>{CPAGEFIELD: name=item-02-title}</h4>
+    {CPAGEFIELD: name=item-02-summary}
+  </div>
+  <!-- End Single Feature -->
+</div>
+<div class="col">
+  <!-- Start Single Feature -->
+  <div class="features-style-twelve">
+    <div class="feature-icon">
+    {CPAGEFIELD: name=item-03-icon}
+    </div>
+    <h4>{CPAGEFIELD: name=item-03-title}</h4>
+    {CPAGEFIELD: name=item-03-summary}
+  </div>
+  <!-- End Single Feature -->
+</div>
+<div class="col">
+  <!-- Start Single Feature -->
+  <div class="features-style-twelve">
+    <div class="feature-icon">
+      {CPAGEFIELD: name=item-04-icon}
+    </div>
+    <h4>{CPAGEFIELD: name=item-04-title}</h4>
+    {CPAGEFIELD: name=item-04-summary}
+  </div>
+  <!-- End Single Feature -->
+</div>
+  ';
+$MENU_TEMPLATE['features-twelve']['end'] 			= '
+      </div>
+      <!-- row -->  
+    </div>
+    <!-- container -->
+</section>
+ <!-- /End Features Area features-twelve -->';
 
 
 $MENU_TEMPLATE['call-action-three']['start'] 		= '<!--====== CALL TO ACTION THREE PART START ======-->{SETIMAGE: w=0}<section class="call-action-area  call-action-three ">';
 $MENU_TEMPLATE['call-action-three']['body'] 		= '
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-xl-5 col-lg-6">
+        <div class="col">
           <div class="call-action-content">
             <h2 class="action-title">
               {CMENUTITLE}
@@ -72,7 +236,7 @@ $MENU_TEMPLATE['about-eight']['start'] 		= '<!-- Start About Eight Area -->{SETI
 $MENU_TEMPLATE['about-eight']['body'] 		= '  
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 col-12">
+        <div class="col">
           <div class="content">
             <div class="icon">
               {CMENUICON}
@@ -104,25 +268,25 @@ $MENU_TEMPLATE['client-logo-three']['body'] =
 	' 
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-6">
+        <div class="col">
           <div class="single-client text-center"> 
             {CPAGEFIELD: name=client-01}
           </div>
           <!-- single client -->
         </div>
-        <div class="col-md-3 col-6">
+        <div class="col">
           <div class="single-client text-center">
             {CPAGEFIELD: name=client-02}
           </div>
           <!-- single client -->
         </div>
-        <div class="col-md-3 col-6">
+        <div class="col">
           <div class="single-client text-center">
             {CPAGEFIELD: name=client-03}
           </div>
           <!-- single client -->
         </div>
-        <div class="col-md-3 col-6">
+        <div class="col">
           <div class="single-client text-center">
             {CPAGEFIELD: name=client-04}
           </div>
@@ -145,7 +309,7 @@ $MENU_TEMPLATE['client-logo-two']['start'] 		= '<!--====== CLIENT LOGO PART STAR
          <div class="row">
             <div class="col-12">
                <div class="content">
-                  <span> {CHAPTER_NAME} </span>
+                  <span> {CPAGETITLE} </span>
                   <h2 class="fw-bold">{CMENUTITLE}</h2>
                   {CMENUBODY}
                </div>
@@ -267,99 +431,110 @@ $MENU_TEMPLATE['contact-us']['body'] 		= '
         </div>
     </div> ';
 $MENU_TEMPLATE['contact-us']['end'] 			= '</section><!--/ End Contact Area -->';
-
-
  
-$MENU_TEMPLATE['features-twelve']['start'] 		= '
-  <!-- Start Features Area -->
-  <section id="features" class="features-area features-twelve">
-    <!--======  Start Section Title Two ======-->
-    <div class="section-title-two">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="content">
-              <span>{CHAPTER_NAME}</span>
-              <h2 class="fw-bold">{CMENUTITLE}</h2>
-              <p>
-                {CMENUBODY}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- container -->
-    </div>
-    <!--====== End Section Title Two ======-->
+ 
+$MENU_TEMPLATE['features-thirteen']['start'] 		= '{SETSTYLE=none}
+  <!-- Start Services Area -->
+ <section class="features-area features-one">
     <div class="container">
-      <div class="row">
-   ';
-$MENU_TEMPLATE['features-twelve']['body'] =
-'<div class="col-lg-3 col-md-6 col-12">
-	     <!-- Start Single Feature -->
-          <div class="features-style-twelve">
-            <div class="feature-icon">
-              {CPAGEFIELD: name=item-01-icon}
+      <div class="row justify-content-center">
+         <div class="col-lg-6">
+            <div class="section-title text-center">
+               <h3 class="title">{CMENUTITLE}</h3>
+               <p class="text">
+                  {CMENUBODY}
+               </p>
             </div>
-            <h4>{CPAGEFIELD: name=item-01-title}</h4>
-            <p>{CPAGEFIELD: name=item-01-text}</p>
-          </div>
-          <!-- End Single Feature -->
-        </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <!-- Start Single Feature -->
-          <div class="features-style-twelve">
-            <div class="feature-icon">
-              <i class="lni lni-wechat"></i>{CPAGEFIELD: name=item-02-icon}
+            <!-- row -->
+         </div>
+      </div>
+      <!-- row -->
+      <div class="row justify-content-center">';
+
+
+$MENU_TEMPLATE['features-thirteen']['body'] =
+	'
+         <div class="col-lg-4 col-md-7 col-sm-9">
+            <div class="features-style-one text-center">
+               <div class="features-icon">
+                  <i class="lni lni-compass"></i>
+               </div>
+               <div class="features-content">
+                  <h4 class="features-title">{CPAGEFIELD: name=item-01-title}</h4>
+                  <p class="text">
+                     {CPAGEFIELD: name=item-01-summary}
+                  </p>
+                  <div class="features-btn rounded-buttons">
+                     <a
+                        class="btn btn-cmenu"
+                        href="{CPAGEFIELD: name=item-01-url}"
+                        >
+                    {LAN=READ_MORE}
+                     </a>
+                  </div>
+               </div>
             </div>
-            <h4>{CPAGEFIELD: name=item-02-title}</h4>
-            {CPAGEFIELD: name=item-02-text}
-          </div>
-          <!-- End Single Feature -->
-        </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <!-- Start Single Feature -->
-          <div class="features-style-twelve">
-            <div class="feature-icon">
-              <i class="lni lni-layers"></i>{CPAGEFIELD: name=item-03-icon}
+            <!-- single features -->
+         </div>
+
+         <div class="col-lg-4 col-md-7 col-sm-9">
+            <div class="features-style-one text-center">
+               <div class="features-icon">
+                  <i class="lni lni-compass"></i>
+               </div>
+               <div class="features-content">
+                  <h4 class="features-title">{CPAGEFIELD: name=item-02-title}</h4>
+                  <p class="text">
+                     {CPAGEFIELD: name=item-02-summary}
+                  </p>
+                  <div class="features-btn rounded-buttons">
+                     <a
+                        class="btn btn-cmenu"
+                        href="{CPAGEFIELD: name=item-02-url}"
+                        >
+                    {LAN=READ_MORE}
+                     </a>
+                  </div>
+               </div>
             </div>
-            <h4>{CPAGEFIELD: name=item-03-title}</h4>
-            {CPAGEFIELD: name=item-03-text}
-          </div>
-          <!-- End Single Feature -->
-        </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <!-- Start Single Feature -->
-          <div class="features-style-twelve">
-            <div class="feature-icon">
-              <i class="lni lni-timer"></i>{CPAGEFIELD: name=item-04-icon}
+            <!-- single features -->
+         </div>
+		 
+		          <div class="col-lg-4 col-md-7 col-sm-9">
+            <div class="features-style-one text-center">
+               <div class="features-icon">
+                  <i class="lni lni-compass"></i>
+               </div>
+               <div class="features-content">
+                  <h4 class="features-title">{CPAGEFIELD: name=item-03-title}</h4>
+                  <p class="text">
+                     CPAGEFIELD: name=item-03-summary}
+                  </p>
+                  <div class="features-btn rounded-buttons">
+                     <a
+                        class="btn btn-cmenu"
+                        href="{CPAGEFIELD: name=item-03-url}"
+                        >
+                    {LAN=READ_MORE}
+                     </a>
+                  </div>
+               </div>
             </div>
-            <h4>{CPAGEFIELD: name=item-04-title}</h4>
-            {CPAGEFIELD: name=item-04-text}
-          </div>
-          <!-- End Single Feature -->
-        </div>
+            <!-- single features -->
+         </div>
+
+	 
   ';
-$MENU_TEMPLATE['features-twelve']['end'] 			= '
+$MENU_TEMPLATE['features-thirteen']['end'] 			= '
+ 
       </div>
       <!-- row -->  
     </div>
     <!-- container -->
 </section>
- <!-- /End Features Area -->';
+ <!-- /End Features Area features-thirteen -->';
 
-	
-$MENU_TEMPLATE['home-services']['start'] 			= '<div class="col-lg-12 text-center">
-								                    <h2 class="section-heading">{CHAPTER_NAME}</h2>
-								                    <h3 class="section-subheading text-muted">{CHAPTER_DESCRIPTION}</h3>
-								                </div><div class="row text-center">';
-$MENU_TEMPLATE['home-services']['body'] 				= '<div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i>
-													<i class="fa fa-{CMENUICON=css} fa-stack-1x fa-inverse"></i>
-													</span><h4 class="service-heading">{CMENUTITLE}</h4>
-														<p class="text-muted">{CMENUBODY}</div>';
-$MENU_TEMPLATE['home-services']['end'] 				= '</div>';
-    
-    
+
 
 $MENU_TEMPLATE['services-seven']['start'] 		= '{SETSTYLE=none}
   <!-- Start Services Area -->
@@ -390,30 +565,30 @@ $MENU_TEMPLATE['services-seven']['body'] =
 <div class="col-lg-4 col-md-6 col-12 ">
 	<div class="single-service h-100">
 		<span class="serial">01</span>
-		<h4>{CPAGEFIELD: name=service-01-title}</h4>
-		<p>{CPAGEFIELD: name=service-01-text}</p>
+		<h4>{CPAGEFIELD: name=item-01-title}</h4>
+		<p>{CPAGEFIELD: name=item-01-summary}</p>
 		<div class="light-rounded-buttons">
-		<a href="{CPAGEFIELD: name=service-01-url}" class="btn primary-btn"> {LAN=READ_MORE} </a>
+		<a href="{CPAGEFIELD: name=item-01-url}" class="btn primary-btn"> {LAN=READ_MORE} </a>
 		</div>
 	</div>
 </div>
 <div class="col-lg-4 col-md-6 col-12">
 	<div class="single-service h-100">
 		<span class="serial">02</span>
-		<h4>{CPAGEFIELD: name=service-02-title}</h4>
-		<p>{CPAGEFIELD: name=service-02-text}</p>
+		<h4>{CPAGEFIELD: name=item-02-title}</h4>
+		<p>{CPAGEFIELD: name=item-02-summary}</p>
 		<div class="light-rounded-buttons">
-		<a href="{CPAGEFIELD: name=service-02-url}" class="btn primary-btn"> {LAN=READ_MORE} </a>
+		<a href="{CPAGEFIELD: name=item-02-url}" class="btn primary-btn"> {LAN=READ_MORE} </a>
 		</div>
 	</div>
 </div>
 <div class="col-lg-4 col-md-6 col-12">
 	<div class="single-service h-100">
 		<span class="serial">03</span>
-		<h4>{CPAGEFIELD: name=service-03-title}</h4>
-		<p>{CPAGEFIELD: name=service-03-text}</p>
+		<h4>{CPAGEFIELD: name=item-03-title}</h4>
+		<p>{CPAGEFIELD: name=item-03-summary}</p>
 		<div class="light-rounded-buttons">
-		<a href="{CPAGEFIELD: name=service-03-url}" class="btn primary-btn"> {LAN=READ_MORE} </a>
+		<a href="{CPAGEFIELD: name=item-03-url}" class="btn primary-btn"> {LAN=READ_MORE} </a>
 		</div>
 	</div>
 </div>		  
@@ -426,7 +601,7 @@ $MENU_TEMPLATE['services-seven']['end'] 			= '
     </div>
     <!-- container -->
 </section>
- <!-- /End Features Area -->';
+ <!-- /End Features Area services-seven -->';
 
 
 $MENU_TEMPLATE['video-one']['start'] 		= '<!--====== VIDEO ONE PART START ======--><section class="video-area video-one">';
