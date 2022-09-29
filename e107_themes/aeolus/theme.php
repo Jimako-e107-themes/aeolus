@@ -60,49 +60,53 @@ class theme implements e_theme_render
 	public function register_css()
 	{
 
-		e107::css('theme', 'aeolus-css/e107.css');  //if define('CORE_CSS', false);
+		e107::css('theme', 'css/e107.css');  //if define('CORE_CSS', false);
 
+		/* theme css */
 		e107::css('theme', 'assets/css/glightbox.min.css');
-	
-		//e107::css('theme', 'assets/css/loading-bar.min.css');
 		e107::css('theme', 'assets/css/tiny-slider.css');
+		//e107::css('theme', 'css/loading-bar.min.css');
+
 
         e107::css('theme', 'default.css');
  
-		e107::css('theme', 'css/list-style/list-style.css');   //core
+		e107::css('theme', 'ayro/list-style/list-style.css');   //core
  
 
-		e107::css('theme', 'css/section-title/section-title-02.css');   //app template
-		e107::css('theme', 'css/section-title/section-title-03.css');   //startup template
+		e107::css('theme', 'ayro/section-title/section-title-02.css');   //app template
+		e107::css('theme', 'ayro/section-title/section-title-03.css');   //startup template
 
-		e107::css('theme', 'css/clients/clients-03.css');   //app template
-		e107::css('theme', 'css/features/feature-12.css');   //app template	
-		e107::css('theme', 'css/videos/video-01.css');   //core
-		e107::css('theme', 'css/pricings/pricing-13.css');   //app template	
-		e107::css('theme', 'css/sliders/slider-07.css');   //app template	
-		e107::css('theme', 'css/teams/team-07.css');   //app template
+		e107::css('theme', 'ayro/clients/clients-03.css');   //app template
+		e107::css('theme', 'ayro/features/feature-12.css');   //app template	
+		e107::css('theme', 'ayro/videos/video-01.css');   //core
+		e107::css('theme', 'ayro/pricings/pricing-13.css');   //app template	
+		e107::css('theme', 'ayro/sliders/slider-07.css');   //app template	
+		e107::css('theme', 'ayro/teams/team-07.css');   //app template
  
-		// e107::css('theme', 'css/footers/footer-05.css');	//app template
-		e107::css('theme', 'css/services/service-07.css');	//startup template
-        e107::css('theme', 'css/videos/video-02.css');   //startup template        
+		// e107::css('theme', 'ayro/footers/footer-05.css');	//app template
+		e107::css('theme', 'ayro/services/service-07.css');	//startup template
+        e107::css('theme', 'ayro/videos/video-02.css');   //startup template        
 
 		//new e107 stuff - featurebox
-		e107::css('theme', 'css/sliders/slider-01.css');  //core
+		e107::css('theme', 'ayro/sliders/slider-01.css');  //core
 
 		//new e107 stuff - signup form
-		e107::css('theme', 'css/sign-in-up/sign-in-up-01.css');  //core
+		//e107::css('theme', 'ayro/sign-in-up/sign-in-up-01.css');  //core
 
 		//new e107 stuff - news grid template
-		e107::css('theme', 'css/blogs/blog-01.css');
+		e107::css('theme', 'ayro/blogs/blog-01.css');
  
-		e107::css('theme', 'css/blogs/blog-04.css');
-		e107::css('theme', 'css/blogs/blog-05.css');
-		e107::css('theme', 'css/blogs/blog-08.css');
-		e107::css('theme', 'css/blogs/blog-10.css');  //menus in sidebar
-		e107::css('theme', 'css/blogs/blog-14.css');
+		e107::css('theme', 'ayro/blogs/blog-04.css');
+		e107::css('theme', 'ayro/blogs/blog-05.css');
+		e107::css('theme', 'ayro/blogs/blog-08.css');
+		e107::css('theme', 'ayro/blogs/blog-10.css');  //menus in sidebar
+		e107::css('theme', 'ayro/blogs/blog-14.css');
 		
 		//new e107 stuff - contact page
-		e107::css('theme', 'css/contact/contact-04.css');
+		e107::css('theme', 'ayro/contact/contact-04.css');
+        
+        
+        e107::css('theme', 'css/navbar.css');
  
 	}
 
@@ -208,6 +212,9 @@ class theme implements e_theme_render
 				$text = $this->remove_ptags($text); //p tags is part of tablestyle
 				//$style = "wm";
 				break;
+			case "login_page":
+				$style="splash";
+				break;
 		}
 
 		if (e_DEBUG)
@@ -226,6 +233,7 @@ class theme implements e_theme_render
 				break;
 
 			case "heading-1":
+			case "splash":	
 				if (!empty($caption))
 				{
 					echo '<h1 class="header-title">' . $caption . '</h1>';
@@ -259,36 +267,11 @@ class theme implements e_theme_render
 				echo '</div>';
 				break;
 
-			case "footer-heading3":
-				if (!empty($caption))
-				{
-					echo '<h3>' . $caption . '</h3>';
-				}
-				echo $text;
-				break;
-
-
-			case "footer-heading5":
-				if (!empty($caption))
-				{
-					echo '<h5 class="download-title">' . $caption . '</h5>';
-				}
-				echo $text;
-				break;
-
-			case "footer-heading6":
+			case "footer-menu":
+				echo '<div class="footer-menu">';
 				if (!empty($caption))
 				{
 					echo '<h6 class="footer-title">' . $caption . '</h6>';
-				}
-				echo $text;
-				break;
-
-			case "footer-widget":
-				echo '<div class="footer-link">';
-				if (!empty($caption))
-				{
-					echo '<h6 class="footer-title">' . $caption . '<h6>';
 				}
 				echo $text;
 				echo '</div>';

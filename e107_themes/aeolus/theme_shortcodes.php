@@ -209,15 +209,16 @@ class theme_shortcodes extends e_shortcode
 	{
 		$text = '';
 		$display = e107::pref('theme', 'backtotop');
+		//e107::css('theme', 'css/backtotop.css'); not working in this theme, in other does, no idea why, part of style.css now
 		$display = varset($display, true);
-
+ 
 		if ($display)
 		{
 			e107::js('theme', 'js/backtotop.js', 'jquery');
 			$text =
-				'<a href="#" class="scroll-top btn-hover">
-				<i class="lni lni-chevron-up"></i>
-			</a>';
+            '<a href="#" class="btn btn-scroll-top">
+                <i class="lni lni-chevron-up"></i>
+            </a>';
 		}
 
 		return $text;
@@ -263,8 +264,8 @@ class theme_shortcodes extends e_shortcode
 	}
 
 
-	/* {FPW_SUBMIT} */
-	function sc_fpw_submit($parm = null)
+	/* {THEME_FPW_SUBMIT} */
+	function sc_theme_fpw_submit($parm = null)
 	{
 		$label = deftrue('LAN_FPW_102', LAN_SUBMIT);
 		return e107::getForm()->button('pwsubmit', $label, 'submit', '',  array('class' => 'btn primary-btn rounded-full'));
