@@ -140,7 +140,7 @@ class theme implements e_theme_render
 
 	public function register_fonts()
 	{
-		//e107::css('url', 'https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+	  	e107::css('url', 'https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 	}
 
 	public function register_icons()
