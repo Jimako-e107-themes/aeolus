@@ -32,9 +32,13 @@
         <css file="style.css"
             name="Default"
             default='true'
-            scope='front'/>
+            scope='front'
+            exclude="bootstrap5" />
         <css file="assets/css/lineicons.min.css"
             name="Default"
+            scope='wysiwyg' />
+        <css file="theme.css"
+            name="Theme css"
             scope='wysiwyg' />
     </stylesheets>
     <layouts>
