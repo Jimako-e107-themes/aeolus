@@ -24,7 +24,7 @@ class theme_config implements e_theme_config
 			'backtotop' => array('title' => 'Display Back Top Button', 'type' => 'boolean',  'writeParms' => array(), 'help' => ''),
 			'stickynavbar' => array('title' => 'Sticky Navbar', 'type' => 'boolean',  'writeParms' => array(), 'help' => ''),
 			'defaultmenuarea' => array('title' => 'Default MenuArea Support', 'type' => 'boolean',  'writeParms' => array(), 
-			'help' => 'With On - default menus will be displayed on all layouts'),
+			'help' => 'With On - default menus will be displayed on all layouts')
 		);
 	}
 

@@ -12,6 +12,74 @@ class theme_shortcodes extends e_shortcode
 		$pref = e107::getPref();
 		$this->userReg = intval($pref['user_reg']);
 	}
+
+	/* {THEME_NAVIGATION: type=navbar-02} */
+	/* this is just shortcut */
+	public function sc_theme_navigation($parm = array())
+	{
+		$type = varset($parm['type'], 'default');
+
+		$options = [
+			'file'=> $type,
+			'path'=>'header/navbars'
+		];
+
+		return self::sc_block($options);
+
+	}
+
+	/* {THEME_MASTHEAD: type=header-05} */
+	public function sc_theme_masthead($parm = array())
+	{
+		$type = varset($parm['type'], 'default');
+
+		$options = [
+			'file' => $type,
+			'path' => 'header/masthead'
+		];
+
+		return self::sc_block($options);
+	}	
+
+	/* term snippet is used for form elements */
+	/* {BLOCK: folder=navbars&key=navbar-01} */
+	/* Warning! This can't be used for footer with menus */
+	public function sc_block($parm = array())
+	{
+		if (!isset($parm['file']))
+		{
+			return '';
+		}
+
+		$folder = varset($parm['path'],'blocks');
+ 
+		$file = varset($parm['file'], 'default');
+
+		$theme_name = deftrue('USERTHEME', e107::pref('core', 'sitetheme'));
+
+		$themepath = e_THEME . $theme_name;
+
+		$path_html = "{$themepath}/{$folder}/{$file}.html";
+		//$path_css =  "{$folder}/{$file}.css";
+ 
+		if (file_exists($path_html))
+		{
+			$text = file_get_contents($path_html);
+		}
+		else
+		{
+			$text = '';
+		}
+/* it is not working anymore. moved to theme.php
+		if (file_exists($themepath . "/" . $path_css))
+		{
+			e107::css("url", $themepath . "/" . $path_css);
+		}
+*/
+		$text = e107::getParser()->parseTemplate($text);
+		return $text;
+	}
+
  
 	/* term snippet is used for form elements */
 	/* {COMPONENT: type=navbars&key=navbar-01} */
@@ -209,15 +277,16 @@ class theme_shortcodes extends e_shortcode
 	{
 		$text = '';
 		$display = e107::pref('theme', 'backtotop');
+		//e107::css('theme', 'css/backtotop.css'); not working in this theme, in other does, no idea why, part of style.css now
 		$display = varset($display, true);
-
+ 
 		if ($display)
 		{
 			e107::js('theme', 'js/backtotop.js', 'jquery');
 			$text =
-				'<a href="#" class="scroll-top btn-hover">
-				<i class="lni lni-chevron-up"></i>
-			</a>';
+            '<a href="#" class="btn btn-scroll-top">
+                <i class="lni lni-chevron-up"></i>
+            </a>';
 		}
 
 		return $text;
@@ -263,8 +332,8 @@ class theme_shortcodes extends e_shortcode
 	}
 
 
-	/* {FPW_SUBMIT} */
-	function sc_fpw_submit($parm = null)
+	/* {THEME_FPW_SUBMIT} */
+	function sc_theme_fpw_submit($parm = null)
 	{
 		$label = deftrue('LAN_FPW_102', LAN_SUBMIT);
 		return e107::getForm()->button('pwsubmit', $label, 'submit', '',  array('class' => 'btn primary-btn rounded-full'));

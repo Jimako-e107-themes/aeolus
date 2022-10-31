@@ -2,14 +2,9 @@
 
 Aeolus Bootstrap 5 e107 theme based on AYRO UI Components
 
-## Core templates
+ 
 
-- you can copy them to theme templates folder too 
-- they are core templates fixed for bootstrap 5 only
-
-
-# Waiting for PR about core bootstrap templates and FPW 
-
+ 
 ## Sources:
 
 ### Free core AYRO UI Components

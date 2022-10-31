@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e107Theme name="Aeolus Theme "
-    version="1.0.1"
-    date="2022-07-26"
+    version="1.0.2"
+    date="2022-10-29"
     compatibility="2.3.1">
     <author name ="Jimako"
         url="https://www.e107sk.com" />
@@ -32,13 +32,9 @@
         <css file="style.css"
             name="Default"
             default='true'
-            scope='front'
-            exclude="bootstrap5" />
+            scope='front'/>
         <css file="assets/css/lineicons.min.css"
             name="Default"
-            scope='wysiwyg' />
-        <css file="theme.css"
-            name="Theme css"
             scope='wysiwyg' />
     </stylesheets>
     <layouts>
