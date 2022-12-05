@@ -1,40 +1,6 @@
 <?xml version='1.0' encoding='utf-8' ?>
-<e107Export version="2.3.3 (git)"
-    timestamp="1660575598">
-    <prefs>
-    <core name="contact_info"><![CDATA[array (
-  'organization' => 'My Company Inc.',
-  'address' => '312 Address St.
-Las Vegas, NV,
-USA',
-  'phone1' => '+1-555-555-5555',
-  'phone2' => '+1-444-444-4444',
-  'phone3' => '',
-  'fax' => '',
-  'email1' => '',
-  'email2' => '',
-  'coordinates' => '',
-  'hours' => '',
-  'message' => '',
-)]]></core>
-    </prefs>
-    <database>
-    <dbTable name="generic">
-        <item>
-            <field name="gen_id">1</field>
-            <field name="gen_type">wmessage</field>
-            <field name="gen_datestamp">1145848343</field>
-            <field name="gen_user_id">1</field>
-            <field name="gen_ip">Hello World!</field>
-            <field name="gen_intdata">0</field>
-            <field name="gen_chardata"><![CDATA[[html]<p><!--
-Title: Welcome Message 11
-Info: Title, rounded buttons, primary button
---></p>
-<p>Bootstrap 5 e107 theme built with AYRO UI Components. Inspired by App Landing Page, but not limited to it.</p>
-<div class="button light-rounded-buttons&quot;><a href="#" class="btn primary-btn"> Download Now </a></div>[/html]]]></field>
-        </item>
-    </dbTable>
+<e107Export version="2.3.3 (git)" timestamp="1670228415" >
+	<database>
 	<dbTable name="page">
 		<item>
 			<field name="page_id">8</field>
@@ -165,6 +131,6 @@ Info: Title, rounded buttons, primary button
 			<field name="menu_button_url"></field>
 			<field name="menu_button_text"></field>
 		</item>
-	</dbTable>    
-    </database>
+	</dbTable>
+	</database>
 </e107Export>

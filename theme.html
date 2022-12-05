@@ -1,99 +1,55 @@
 <body id="page-top" class="{LAYOUT_ID}" {BODY_ONLOAD}>
-{---MODAL---}
-{THEME_PRELOADER}
-{THEME_NAVIGATION: type=navbar-02}
+    {---MODAL---}
+    {THEME_PRELOADER}
+    {THEME_NAVIGATION: type=navbar-02}
 
 
-{---LAYOUT---} 
-<footer class="footer-area footer" itemscope="" itemtype="https://schema.org/WPFooter">
-    <div class="footer-widget">
-        <div class="container">
-            <!-- row -->
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-sm-6 footer-column">
-                    {SETSTYLE=footer-menu}
-                    {DEFAULT_MENUAREA=41}
-                    {MENUAREA=41}
-
-                    <!-- just for demo area 41 -->
-                    <div class="footer-menu">
-                        <div class="footer-text">
-                            <span class="number"><i class="lni lni-phone-set"></i>{CONTACT_INFO: type=phone1}</span>
-                            <span class="mail"><i class="lni lni-envelope"></i>{CONTACT_INFO: type=email1}</span>
-                        </div>
+    {---LAYOUT---}
+    <footer class="footer-area footer" itemscope="" itemtype="https://schema.org/WPFooter">
+        <div class="footer-widget">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-sm-6 footer-column">
+                        {SETSTYLE=footer-menu}{CMENU=footer-col1}
+                        {SETSTYLE=footer-menu}{MENUAREA=41}
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-sm-6 footer-column">
+                        {SETSTYLE=footer-menu}{CMENU=footer-col2}
+                        {SETSTYLE=footer-menu}{MENUAREA=42}
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6 footer-column">
+                        {SETSTYLE=footer-menu}{CMENU=footer-col3}
+                        {SETSTYLE=footer-menu}{MENUAREA=43}
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-6 footer-colum">
+                        {SETSTYLE=footer-menu}{CMENU=footer-col4}
+                        {SETSTYLE=footer-menu}{MENUAREA=44}
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-2 col-sm-6 footer-column">
-                    {SETSTYLE=footer-menu}
-                    {DEFAULT_MENUAREA=42}
-                    {MENUAREA=42}
-                    <!-- just for demo area 42 -->
-                    <div class="footer-menu">
-                    <h6 class="footer-title">Footer links</h6>
-                        {NAVIGATION: type=footer&layout=footer}
-                        <!-- just for demo  -->
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-sm-6 footer-column">
-                        {SETSTYLE=footer-menu}
-                        {DEFAULT_MENUAREA=43}
-                        {MENUAREA=43}
-                        <!-- just for demo area 43 --> 
-                        <div class="footer-menu">
-                            <h6 class="footer-title">Footer links</h6>
-                            {NAVIGATION: type=main&layout=footer}
-                        </div>
-                        <!--  just for demo  -->
-                </div>
-                <div class="col-xl-2 col-lg-2 col-sm-6 footer-column">
-                        {SETSTYLE=footer-menu}
-                        {DEFAULT_MENUAREA=44}
-                        {MENUAREA=44}
-                        <!-- just for demo area 44 -->
-                        <div class="footer-menu"> 
-                            <h6 class="footer-title">Footer links</h6>
-                            {NAVIGATION: type=main&layout=footer}
-                        </div>
-                        <!-- just for demo  -->
-                    
-                    <!-- footer link -->
-                </div>
-                <div class="col-xl-2 col-lg-2 col-sm-4 footer-column">
-                        {SETSTYLE=footer-menu}
-                        {DEFAULT_MENUAREA=45}
-                        {MENUAREA=45}
-                        <!-- just for demo area 45 -->
-                        <div class="footer-menu">
-                            <h6 class="footer-title">Footer links</h6>
-                            {NAVIGATION: type=main&layout=footer}
-                        </div>
-                        <!-- just for demo  -->
-                   
-                </div>
+                <!-- row -->
             </div>
-            <!-- row -->
+            <!-- container -->
         </div>
-        <!-- container -->
-    </div>
-    <!-- footer widget -->
+        <!-- footer widget -->
 
-    <div class="footer-copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="copyright text-center d-md-flex justify-content-between align-items-center">
-                        <p class="text">{SITEDISCLAIMER}</p>
-                        {XURL_ICONS: template=footer}
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright text-center d-md-flex justify-content-between align-items-center">
+                            <p class="text">{SITEDISCLAIMER}</p>
+                            {XURL_ICONS: template=footer}
+                        </div>
                     </div>
                 </div>
+                <!-- row -->
             </div>
-            <!-- row -->
+            <!-- container -->
         </div>
-        <!-- container -->
-    </div>
-    <!-- footer copyright -->
-</footer>
-    
+        <!-- footer copyright -->
+    </footer>
+
     <a href="#" class="btn btn-scroll-top">
         <i class="lni lni-chevron-up"></i>
     </a>
