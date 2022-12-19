@@ -132,7 +132,7 @@ $COOKBOOK_TEMPLATE['overview_datatable']['end'] = '
 
 // INDVIDUAL RECIPE LAYOUT 
 $COOKBOOK_TEMPLATE['recipe_layout'] = '
-<div class="row single-blog blog-style-eight">	 	 
+<div class="row single-blog blog-style-eight product-page">	 	 
 		{---RECIPE-CONTENT---}
 		{---RECIPE-INFO---}
 	 
@@ -154,16 +154,20 @@ $COOKBOOK_TEMPLATE['recipe_layout'] = '
     </div>
 </div>
 ';
-
+/* 
+<h2 class="blog-title">{COOKBOOK_RECIPE_NAME}</h2>
+*/ 
 $COOKBOOK_TEMPLATE['recipe_content'] = '
 <!-- Start content left  -->
 <div class="col-md-8">
-    <h2 class="blog-title">{COOKBOOK_RECIPE_NAME}</h2>
-    <div class="recipex-box-content">
-        <h3>{LAN=LAN_CB_INGREDIENTS}</h3>
-        {SETIMAGE: w=180&h=180}
-        <img class="img-thumbnail pull-right hidden-xs" alt="{COOKBOOK_RECIPE_ANCHOR}" src="{COOKBOOK_RECIPE_THUMB_URL}">
-        {COOKBOOK_RECIPE_INGREDIENTS}
+    <div class="product-overview">
+        
+        <div class="blog-image p-2">{SETIMAGE: w=0&h=0}
+        <img alt="{COOKBOOK_RECIPE_ANCHOR}" src="{COOKBOOK_RECIPE_THUMB_URL}">
+		</div>
+        
+		<h3>{LAN=LAN_CB_INGREDIENTS}</h3>
+		{COOKBOOK_RECIPE_INGREDIENTS}
         <div class="recipe-instructions">
             <h3>{LAN=LAN_CB_INSTRUCTIONS}</h3>
             {COOKBOOK_RECIPE_INSTRUCTIONS}
@@ -173,25 +177,53 @@ $COOKBOOK_TEMPLATE['recipe_content'] = '
 <!-- End content left-->
 ';
 
-$COOKBOOK_WRAPPER['recipe_info']['COOKBOOK_RECIPE_AUTHORRATING: type=stars']   = '<div id="rating">{---}</div>';
-$COOKBOOK_WRAPPER['recipe_info']['COOKBOOK_RECIPE_DIFFICULTY: type=stars']     = '<div id="difficulty">{---}</div>';
+$COOKBOOK_WRAPPER['recipe_info']['COOKBOOK_RECIPE_AUTHORRATING: type=stars']   = 
+'<div class="product-rating d-flex"><div id="rating">{---}</div></div>';
+$COOKBOOK_WRAPPER['recipe_info']['COOKBOOK_RECIPE_DIFFICULTY: type=stars']     = '<li>
+<i class="lni lni-travel"></i><span id="difficulty">{---}</span></li>';
+
+$COOKBOOK_WRAPPER['recipe_info']['COOKBOOK_RECIPE_KEYWORDS']     = '<li>
+<i class="lni lni-tag"></i>{---}</li>';
+ 
+
+$COOKBOOK_TEMPLATE['recipe_keyword'] = 
+'<a href="{URL}" title="{KEYWORD}">{KEYWORD}</a>';
 
 $COOKBOOK_TEMPLATE['recipe_info'] = '
 <!-- Sidebar -->
-<div class="col-md-4">
-    <h3>{LAN=LAN_CB_RECIPEINFO}</h3>
-    <ul class="fa-ul">
-        <li>{GLYPH: type=fa-cutlery&class=fa-li} {COOKBOOK_CATEGORY_NAME: type=link}</li>
-        <li>{GLYPH: type=fa-users&class=fa-li} {COOKBOOK_RECIPE_PERSONS}</li>
-        <li>{GLYPH: type=fa-clock-o&class=fa-li} {COOKBOOK_RECIPE_TIME}</li>
-        <li>{GLYPH: type=fa-tags&class=fa-li} {COOKBOOK_RECIPE_KEYWORDS}</li>
-        <li>{GLYPH: type=fa-trophy&class=fa-li} {COOKBOOK_RECIPE_AUTHORRATING: type=stars}</li>
-        <li>{GLYPH: type=fa-toolbox&class=fa-li} {COOKBOOK_RECIPE_DIFFICULTY: type=stars}</li>
-        <li>{GLYPH: type=fa-user&class=fa-li} {COOKBOOK_RECIPE_AUTHOR}</li>
-        <li>{GLYPH: type=fa-calendar-alt&class=fa-li} {COOKBOOK_RECIPE_DATE}</li>
-    </ul>
+<div class="col-md-4 product-details-content">
+	<h4 class="product-title">{COOKBOOK_RECIPE_NAME}</h4>
+	{COOKBOOK_RECIPE_AUTHORRATING: type=stars}
+	<div class="product-price">
+     	{COOKBOOK_CATEGORY_NAME: type=link}
+	</div>
+ 
+<div class="list-style">
+   <div class="list-style-two">
+      <ul>
+         <li>
+            <i class="lni lni-users"></i> {COOKBOOK_RECIPE_PERSONS}
+         </li>
+         <li>
+            <i class="lni lni-alarm-clock"></i> {COOKBOOK_RECIPE_TIME}
+         </li>
 
-    <h3>{LAN=LAN_CB_ACTIONS}</h3>
+        {COOKBOOK_RECIPE_KEYWORDS}
+         
+        {COOKBOOK_RECIPE_DIFFICULTY: type=stars}
+         
+		<li>
+            <i class="lni lni-user"></i> {COOKBOOK_RECIPE_AUTHOR}
+         </li>
+		<li>
+            <i class="lni lni-calendar"></i>{COOKBOOK_RECIPE_DATE}
+         </li>		 
+      </ul>
+   </div>
+</div>
+ 
+<h4 class="product-title mt-3">{LAN=LAN_CB_ACTIONS}</h4>
+   
     <ul class="fa-ul">
         {COOKBOOK_BOOKMARK}
         <li>{GLYPH: type=fa-pencil&class=fa-li} {COOKBOOK_EDIT}</li>
