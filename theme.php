@@ -55,7 +55,7 @@ class theme implements e_theme_render
 	public function register_css()
 	{
 
-		e107::css('theme', 'css/e107.css');  //if define('CORE_CSS', false);
+	 	e107::css('theme', 'css/e107.css');  //if define('CORE_CSS', false);
 
 		/* workaround, css loading is not working in theme_shortcodes */
 		$options['navbar'] = [
@@ -142,7 +142,7 @@ class theme implements e_theme_render
 		e107::css('inline', $header_css);
 
 
-		$footer_js = ' //======== tiny slider for clients
+	/*	$footer_js = ' //======== tiny slider for clients
    var clients_logo = new tns({
      container: ".client-logos-two",
      autoplay: true,
@@ -170,7 +170,7 @@ class theme implements e_theme_render
        },
      },
    });';
-
+*/
 		e107::js('footer-inline', $footer_js);
 	}
 
